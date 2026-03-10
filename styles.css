@@ -130,8 +130,8 @@ ul { list-style: none; }
 
 h1, h2, h3, h4 {
   font-family: var(--font-display);
-  line-height: 1.1;
-  letter-spacing: -0.025em;
+  line-height: 1.15;
+  letter-spacing: -0.01em;  /* corregido: -0.025em causaba estiramiento en Syne */
   color: var(--color-text);
 }
 
@@ -166,7 +166,7 @@ h1, h2, h3, h4 {
   font-size: var(--text-3xl);
   font-weight: 800;
   margin-top: 0.4em;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;  /* corregido: sin estiramiento */
 }
 
 .section-subtitle {
@@ -546,34 +546,42 @@ h1, h2, h3, h4 {
   margin-bottom: 1.25rem;
 }
 
-/* Nombre principal con Syne — fuerte y tech */
+/* Nombre principal con Syne
+   letter-spacing reducido: -0.03em causaba estiramiento visual entre palabras */
 .hero-name {
   font-family: var(--font-display);
   font-size: var(--text-hero);
   font-weight: 800;
-  line-height: 1.0;
-  letter-spacing: -0.03em;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
   color: var(--color-text);
   margin-bottom: 1rem;
+  word-break: keep-all;
 }
 
-/* Apellido/palabra destacada en navy con subrayado lila */
+/* Palabra destacada en navy.
+   display:inline (no inline-block) para que el ::after
+   se ciña al ancho real del texto y no se estire. */
 .hero-name em {
   font-style: normal;
   color: var(--color-navy);
   position: relative;
-  display: inline-block;
+  display: inline;
+  white-space: nowrap;
 }
 
+/* Subrayado lila acotado al ancho de la palabra */
 .hero-name em::after {
   content: '';
   position: absolute;
-  bottom: 0.06em;
-  left: 0; right: 0;
-  height: 0.1em;
+  bottom: 0.05em;
+  left: 0.02em;
+  right: 0.02em;
+  height: 3px;
   background: linear-gradient(90deg, var(--color-accent), var(--color-accent-dark));
-  border-radius: 2px;
-  opacity: .55;
+  border-radius: 3px;
+  opacity: .5;
+  pointer-events: none;
 }
 
 /* Título profesional en lila */
@@ -796,7 +804,7 @@ h1, h2, h3, h4 {
   flex-wrap: wrap;
 }
 
-.timeline-role { font-family: var(--font-display); font-size: var(--text-xl); font-weight: 700; }
+.timeline-role { font-family: var(--font-display); font-size: var(--text-xl); font-weight: 700; letter-spacing: -0.01em; }
 
 .timeline-period {
   font-size: var(--text-xs);
