@@ -2,7 +2,7 @@
 =============================================================================
   STYLES.CSS — Portafolio Personal Profesional Tech
   Paleta: Azul Navy #1F3A93 + Lila Tech #B19CD9
-  Tipografía: Syne (headings) + Open Sans (body)
+  Tipografía: Syne (headings) + Plus Jakarta Sans (body)
 =============================================================================
   ÍNDICE:
   1. Variables CSS (colores, fuentes, espaciado)
@@ -57,11 +57,13 @@
   --color-accent-pale:  #EDE8F8;      /* Lila muy claro (fondos) */
 
   /* ── Tipografía ──────────────────────────────────────────────────────
-     Syne:      headings potentes con carácter tech
-     Open Sans: cuerpo limpio, legible y muy profesional
+     Syne:              headings potentes con carácter geométrico tech
+     Plus Jakarta Sans: body elegante, diseñado para interfaces digitales.
+                        Alternativa premium a Open Sans — geométrica, refinada,
+                        con excelente legibilidad en todos los pesos y tamaños.
      ------------------------------------------------------------------- */
   --font-display: 'Syne', 'Helvetica Neue', Arial, sans-serif;
-  --font-body:    'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  --font-body:    'Plus Jakarta Sans', 'Helvetica Neue', Arial, sans-serif;
 
   /* ── Escala tipográfica ─────────────────────────────────────────────── */
   --text-xs:    0.75rem;
@@ -119,7 +121,7 @@ body {
   font-family: var(--font-body);
   background-color: var(--color-bg);
   color: var(--color-text);
-  line-height: 1.7;
+  line-height: 1.65;  /* Plus Jakarta Sans: métricas más ajustadas, 1.65 óptimo */
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
