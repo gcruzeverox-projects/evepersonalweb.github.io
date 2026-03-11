@@ -2,7 +2,7 @@
 =============================================================================
   STYLES.CSS — Portafolio Personal Profesional Tech
   Paleta: Azul Navy #1F3A93 + Lila Tech #B19CD9
-  Tipografía: Syne (headings) + Plus Jakarta Sans (body)
+  Tipografía: Bricolage Grotesque (headings) + Plus Jakarta Sans (body)
 =============================================================================
   ÍNDICE:
   1. Variables CSS (colores, fuentes, espaciado)
@@ -57,12 +57,13 @@
   --color-accent-pale:  #EDE8F8;      /* Lila muy claro (fondos) */
 
   /* ── Tipografía ──────────────────────────────────────────────────────
-     Syne:              headings potentes con carácter geométrico tech
-     Plus Jakarta Sans: body elegante, diseñado para interfaces digitales.
-                        Alternativa premium a Open Sans — geométrica, refinada,
-                        con excelente legibilidad en todos los pesos y tamaños.
+     Bricolage Grotesque: display con proporciones equilibradas a cualquier
+                          tamaño. Variable font (opsz 12–96): se auto-ajusta
+                          ópticamente según el tamaño, eliminando el efecto
+                          de "letras achatadas" propias de otras fuentes display a 800w.
+     Plus Jakarta Sans:   body refinado, diseñado para interfaces digitales.
      ------------------------------------------------------------------- */
-  --font-display: 'Syne', 'Helvetica Neue', Arial, sans-serif;
+  --font-display: 'Bricolage Grotesque', 'Helvetica Neue', Arial, sans-serif;
   --font-body:    'Plus Jakarta Sans', 'Helvetica Neue', Arial, sans-serif;
 
   /* ── Escala tipográfica ─────────────────────────────────────────────── */
@@ -133,7 +134,7 @@ ul { list-style: none; }
 h1, h2, h3, h4 {
   font-family: var(--font-display);
   line-height: 1.15;
-  letter-spacing: -0.01em;  /* corregido: -0.025em causaba estiramiento en Syne */
+  letter-spacing: -0.02em;  /* Bricolage Grotesque maneja bien el kerning negativo */
   color: var(--color-text);
 }
 
@@ -168,7 +169,7 @@ h1, h2, h3, h4 {
   font-size: var(--text-3xl);
   font-weight: 800;
   margin-top: 0.4em;
-  letter-spacing: -0.01em;  /* corregido: sin estiramiento */
+  letter-spacing: -0.02em;
 }
 
 .section-subtitle {
@@ -548,14 +549,15 @@ h1, h2, h3, h4 {
   margin-bottom: 1.25rem;
 }
 
-/* Nombre principal con Syne
-   letter-spacing reducido: -0.03em causaba estiramiento visual entre palabras */
+/* Nombre principal con Bricolage Grotesque
+   Bricolage Grotesque es variable font (opsz): se optimiza automáticamente
+   a tamaños grandes, sin distorsión. letter-spacing -0.02em es seguro. */
 .hero-name {
   font-family: var(--font-display);
   font-size: var(--text-hero);
   font-weight: 800;
   line-height: 1.05;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   color: var(--color-text);
   margin-bottom: 1rem;
   word-break: keep-all;
