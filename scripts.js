@@ -40,9 +40,9 @@ const TRANSLATIONS = {
     hero_pitch:         'Transformo datos en decisiones estratégicas y lidero equipos Agile para construir productos digitales que generan impacto real en el negocio.',
     hero_cta_projects:  'Ver proyectos',
     hero_cta_contact:   'Hablemos',
-    stat_years:         'años de experiencia',
-    stat_projects:      'proyectos entregados',
-    stat_certs:         'certificaciones',
+    stat_years:         'Años de experiencia',
+    stat_projects:      'Proyectos entregados',
+    stat_certs:         'Certificaciones',
     hero_scroll:        'Scroll',
 
     /* Sobre mí */
