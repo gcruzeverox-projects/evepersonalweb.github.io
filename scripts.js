@@ -1,7 +1,7 @@
 /**
  * =============================================================================
  *  SCRIPTS.JS — Portafolio Personal Profesional Tech
- *  Autor: [TU NOMBRE]
+ *  Autor: [Evelyn Cruz]
  *
  *  CONTENIDO DE ESTE ARCHIVO:
  *  1. TRADUCCIONES (i18n) — Textos en ES / EN / FR
@@ -48,30 +48,32 @@ const TRANSLATIONS = {
     /* Sobre mí */
     about_tag:           'Sobre mí',
     about_heading:       'Quien está detrás de los datos',
-    about_p1:            'Soy analista de datos con más de 6 años de experiencia convirtiendo conjuntos de datos complejos en narrativas claras que impulsan la toma de decisiones estratégicas. Mi trabajo combina rigor técnico con visión de negocio.',
-    about_p2:            'Como Product Owner certificada, he liderado roadmaps de producto en entornos Agile, priorizando el backlog con enfoque en el valor para el usuario y los OKRs corporativos. Creo en los datos como el lenguaje universal del progreso.',
-    about_p3:            'Mi rol como Scrum Master me ha enseñado que la excelencia técnica sin colaboración humana es incompleta. Facilito ceremonias, elimino impedimentos y construyo equipos de alto rendimiento con propósito compartido.',
+    about_p1:            'Soy Ingeniera en Sistemas Informáticos con más de 13 años de experiencia en IT. Mi camino comenzó en soporte técnico, comprendiendo desde la base cómo funcionan los sistemas, y evolucionó hacia el análisis de negocio, donde aprendí a conectar procesos, métricas y necesidades reales de las organizaciones.',
+    about_p2:            'Con el tiempo, amplié mi enfoque hacia la gestión de productos como Product Owner y la facilitación de equipos como Scrum Master, participando en industrias como aviación, banca, educación, gobierno, seguros y comercio. Estas experiencias me permitieron desarrollar una visión integral: entender tanto la tecnología como el valor que esta genera para el negocio y sus usuarios.',
+    about_p3:            'Hoy, mi enfoque está en los datos. Me especializo en transformar información compleja en insights claros, historias comprensibles y decisiones estratégicas. Además, me mantengo en constante actualización en el uso de inteligencia artificial, que utilizo para profundizar mis análisis, plasmar ideas de forma más efectiva y potenciar mi creatividad. Porque los datos, por sí solos, no generan valor; pero bien interpretados, lo cambian todo.',
+    about_p4:            'Creo en el aprendizaje continuo, en el poder de los equipos colaborativos y en los datos como el lenguaje universal que impulsa el progreso.'
     about_story_heading: 'Mi historia',
-    about_story_p1:      'Crecí entre sistemas, curiosidad y la convicción de que los números cuentan historias. Comencé mi carrera en consultoría, donde aprendí a hablar tanto el idioma del negocio como el del código. Ese puente entre ambos mundos define mi perfil único.',
-    about_story_p2:      'Fuera de la pantalla, me apasiona la fotografía urbana, los podcasts de economía conductual y el senderismo. Creo firmemente que las mejores ideas nacen lejos del escritorio.',
+    about_story_p1:      'Crecí en una familia que no le temía al trabajo y que aprovechaba cada oportunidad para salir adelante. Desde muy joven fui curiosa y encontré en el estudio una puerta hacia nuevas experiencias y la posibilidad de construir mi propio camino.',
+    about_story_p2:      'Decidí estudiar Ingeniería en Sistemas Informáticos, una carrera cuya versatilidad me permitió comprender el valor de la información y descubrir que los datos cuentan historias. Al iniciar mi vida profesional, aprendí a comunicarme tanto en el lenguaje del negocio como en el técnico. Ese puente entre ambos mundos es lo que hoy define mi perfil. ',
+    about_story_p3:      'Fuera de la pantalla, disfruto la lectura y los podcasts sobre psicología, literatura y negocios. Creo firmemente en la importancia de aprender y desaprender constantemente, especialmente en un entorno tan dinámico como el tecnológico.'
     about_soft_heading:  'Habilidades blandas',
     about_values_heading:'Valores profesionales',
     soft_1: 'Liderazgo orientado a personas',
-    soft_2: 'Comunicación ejecutiva',
+    soft_2: 'Comunicación asertiva',
     soft_3: 'Pensamiento analítico',
     soft_4: 'Resolución de conflictos',
     soft_5: 'Gestión del cambio',
-    soft_6: 'Facilitación de talleres',
+    soft_6: 'Aprendizaje continuo',
     soft_7: 'Trabajo en equipo multidisciplinar',
-    soft_8: 'Orientación a resultados',
-    value_1_title: 'Aprendizaje continuo',
-    value_1_desc:  'Cada proyecto es una oportunidad de crecer',
+    soft_8: 'Adaptabilidad y resilencia',
+    value_1_title: 'Enfoque en valor de negocio',
+    value_1_desc:  'Si no genera valor, no es prioridad',
     value_2_title: 'Calidad sobre velocidad',
     value_2_desc:  'Entrego trabajo bien hecho, siempre',
     value_3_title: 'Transparencia',
     value_3_desc:  'Comunicación honesta y directa con todos',
-    value_4_title: 'Impacto medible',
-    value_4_desc:  'Si no se puede medir, no se puede mejorar',
+    value_4_title: 'La IA es un deporte de equipo',
+    value_4_desc:  'Integrar negocio, datos y tecnología para soluciones efectivas',
 
     /* Experiencia */
     exp_tag:     'Trayectoria',
