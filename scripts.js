@@ -1,7 +1,7 @@
 /**
  * =============================================================================
  *  SCRIPTS.JS — Portafolio Personal Profesional Tech
- *  Autor: [TU NOMBRE]
+ *  Autor: [Evelyn Roxana Cruz]
  *
  *  CONTENIDO DE ESTE ARCHIVO:
  *  1. TRADUCCIONES (i18n) — Textos en ES / EN / FR
