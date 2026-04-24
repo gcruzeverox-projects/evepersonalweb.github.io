@@ -329,13 +329,17 @@ h1, h2, h3, h4 {
   font-size: var(--text-lg);
   letter-spacing: -0.02em;
   flex-shrink: 0;
-  height: 40px;
+  max-height: 50px;
   width: auto;
   display: block;
 }
 
-.logo-hex { font-size: 1.5rem; line-height: 1; }
-.logo-name { color: var(--color-navy); }
+.nav-logo img {
+  height: 100%;
+  width: auto;
+  max-width: 180px; /* Define un ancho máximo razonable */
+  object-fit: contain; /* Evita que la imagen se estire */
+}
 
 .nav-links { display: flex; align-items: center; gap: 0.15rem; }
 
