@@ -313,6 +313,7 @@ h1, h2, h3, h4 {
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
+  height: 80px;
   max-width: var(--max-width);
   margin-inline: auto;
   padding-inline: clamp(1.25rem, 5vw, 2.5rem);
@@ -329,7 +330,7 @@ h1, h2, h3, h4 {
   font-size: var(--text-lg);
   letter-spacing: -0.02em;
   flex-shrink: 0;
-  max-height: 50px;
+  height: 40px;
   width: auto;
   display: block;
 }
@@ -337,8 +338,9 @@ h1, h2, h3, h4 {
 .nav-logo img {
   height: 100%;
   width: auto;
-  max-width: 180px; /* Define un ancho máximo razonable */
+  max-width: 150px; /* Define un ancho máximo razonable */
   object-fit: contain; /* Evita que la imagen se estire */
+  display: block;
 }
 
 .nav-links { display: flex; align-items: center; gap: 0.15rem; }
