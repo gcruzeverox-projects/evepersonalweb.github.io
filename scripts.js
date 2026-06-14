@@ -1,7 +1,7 @@
 /**
  * =============================================================================
  *  SCRIPTS.JS — Portafolio Personal Profesional Tech
- *  Autor: [Evelyn Roxana Cruz]
+ *  Autor: Evelyn Roxana Cruz
  *
  *  CONTENIDO DE ESTE ARCHIVO:
  *  1. TRADUCCIONES (i18n) — Textos en ES / EN / FR
@@ -12,6 +12,25 @@
  *  6. ANIMACIONES — Intersection Observer para efectos de scroll
  *  7. FORMULARIO — Validación del formulario de demostración
  *  8. INICIALIZACIÓN — Punto de entrada principal
+ * =============================================================================
+ *
+ *  ✏️  GUÍA RÁPIDA — QUÉ DEBES RELLENAR
+ *  ─────────────────────────────────────
+ *  Busca todos los comentarios  ✏️  y reemplaza con tu información real.
+ *
+ *  SECCIÓN         LÍNEAS APROX.   QUÉ CAMBIAR
+ *  ─────────────── ─────────────   ──────────────────────────────────────────
+ *  EXPERIENCE      ~303            Empresas, roles, fechas, logros reales
+ *  EDUCATION       ~460            Tu universidad real + años
+ *  CERTIFICATIONS  ~482            Tus 4 certificaciones reales
+ *  SKILLS          ~498            Ajusta niveles (0-100) a tu dominio real
+ *  PROJECTS        ~553            Tus proyectos reales con URLs de GitHub
+ *
+ *  TAMBIÉN en index.html (NO en este archivo):
+ *  • Imagen de perfil: cambia src de la etiqueta <img> en la sección hero
+ *    de "https://i.pravatar.cc/400?img=47" → "assets/img/Profile-Eve.jpg"
+ *  • Email de contacto: verifica que el <a href="mailto:..."> use eroxanacruz@gmail.com
+ *  • LinkedIn: verifica que el enlace apunte a linkedin.com/in/evecruzg
  * =============================================================================
  */
 
@@ -42,7 +61,7 @@ const TRANSLATIONS = {
     hero_cta_contact:   'Hablemos',
     stat_years:         'años de experiencia',
     stat_projects:      'proyectos entregados',
-    stat_certs:         'certificaciones',
+    stat_certs:         'certificaciones y cursos',
     hero_scroll:        'Scroll',
 
     /* Sobre mí */
@@ -99,12 +118,12 @@ const TRANSLATIONS = {
     contact_tag:          'Contacto',
     contact_heading:      'Hablemos',
     contact_subtitle:     '¿Tienes un proyecto interesante o una oportunidad para explorar? Escríbeme.',
-    form_notice:          'Este formulario es de demostración y no envía datos reales. Para contacto real, usa el correo o LinkedIn.',
+    form_notice:          'Completa el formulario y te responderé a la brevedad. También puedes escribirme directamente por correo o LinkedIn.',
     form_name:            'Nombre completo',
     form_email:           'Correo electrónico',
     form_message:         'Mensaje',
     form_submit:          'Enviar mensaje',
-    form_success:         '✓ Mensaje de prueba enviado correctamente (demostración).',
+    form_success:         '✓ ¡Mensaje enviado! Te responderé pronto a tu correo.',
     form_error:           '⚠ Por favor completa todos los campos correctamente.',
     contact_info_heading: 'Encuéntrame en',
     availability_title:   'Disponible para proyectos',
@@ -126,19 +145,19 @@ const TRANSLATIONS = {
     nav_cv:         'Download CV',
 
     hero_available:     'Open to new opportunities',
-    hero_title:         'Data Analyst · Product Owner · Scrum Master',
+    hero_title:         'AI Business Analyst / AI Automation Analyst · Data Analyst · Product Owner · Scrum Master',
     hero_pitch:         'I transform data into strategic decisions and lead Agile teams to build digital products that create real business impact.',
     hero_cta_projects:  'View projects',
     hero_cta_contact:   "Let's talk",
     stat_years:         'years of experience',
     stat_projects:      'projects delivered',
-    stat_certs:         'certifications',
+    stat_certs:         'certifications & courses',
     hero_scroll:        'Scroll',
 
     about_tag:           'About me',
     about_heading:       'The person behind the data',
-    about_p1:            'I am a data analyst with over 6 years of experience turning complex datasets into clear narratives that drive strategic decision-making. My work blends technical rigor with business vision.',
-    about_p2:            'As a certified Product Owner, I have led product roadmaps in Agile environments, prioritizing the backlog with a focus on user value and corporate OKRs. I believe in data as the universal language of progress.',
+    about_p1:            'I am a Computer Systems Engineer with over 13 years of experience in IT. I have evolved from technical roles to business analysis, product management as a Product Owner, and team facilitation as a Scrum Master across diverse industries.',
+    about_p2:            'Currently, I focus on leveraging data and artificial intelligence to create digital products, enhance analysis and turn ideas into real solutions. I am also a certified Scrum Master and hold a Google Cloud Digital Leader certification.',
     about_p3:            'My role as a Scrum Master has taught me that technical excellence without human collaboration is incomplete. I facilitate ceremonies, remove impediments, and build high-performing teams with shared purpose.',
     about_story_heading: 'My story',
     about_story_p1:      'I grew up surrounded by systems, curiosity, and the conviction that numbers tell stories. I started my career in consulting, where I learned to speak both the language of business and the language of code. That bridge between two worlds defines my unique profile.',
@@ -183,12 +202,12 @@ const TRANSLATIONS = {
     contact_tag:          'Contact',
     contact_heading:      "Let's talk",
     contact_subtitle:     'Have an interesting project or opportunity to explore? Write to me.',
-    form_notice:          'This form is for demonstration only and does not send real data. For real contact, use email or LinkedIn.',
+    form_notice:          'Fill out the form and I will get back to you shortly. You can also reach me directly by email or LinkedIn.',
     form_name:            'Full name',
     form_email:           'Email address',
     form_message:         'Message',
     form_submit:          'Send message',
-    form_success:         '✓ Demo message sent successfully (demonstration).',
+    form_success:         '✓ Message sent! I will reply to your email soon.',
     form_error:           '⚠ Please complete all fields correctly.',
     contact_info_heading: 'Find me on',
     availability_title:   'Available for projects',
@@ -215,13 +234,13 @@ const TRANSLATIONS = {
     hero_cta_contact:   'Discutons',
     stat_years:         "années d'expérience",
     stat_projects:      'projets livrés',
-    stat_certs:         'certifications',
+    stat_certs:         'certifications et cours',
     hero_scroll:        'Défiler',
 
     about_tag:           'À propos',
     about_heading:       'La personne derrière les données',
-    about_p1:            "Je suis analyste de données avec plus de 6 ans d'expérience à transformer des jeux de données complexes en récits clairs qui pilotent la prise de décision stratégique. Mon travail allie rigueur technique et vision métier.",
-    about_p2:            "En tant que Product Owner certifiée, j'ai dirigé des feuilles de route produit dans des environnements Agile, en priorisant le backlog avec un focus sur la valeur utilisateur et les OKR de l'entreprise.",
+    about_p1:            "Je suis Ingénieure en Systèmes Informatiques avec plus de 13 ans d'expérience en IT. J'ai évolué de rôles techniques vers l'analyse métier, la gestion de produits en tant que Product Owner et la facilitation d'équipes en tant que Scrum Master.",
+    about_p2:            "Actuellement, je me concentre sur l'utilisation des données et de l'intelligence artificielle pour créer des produits numériques et concrétiser des idées en solutions réelles. Je suis également certifiée Scrum Master et Google Cloud Digital Leader.",
     about_p3:            "Mon rôle de Scrum Master m'a appris que l'excellence technique sans collaboration humaine est incomplète. Je facilite les cérémonies, lève les obstacles et construis des équipes performantes avec un objectif commun.",
     about_story_heading: 'Mon histoire',
     about_story_p1:      "J'ai grandi entre les systèmes, la curiosité et la conviction que les chiffres racontent des histoires. J'ai commencé ma carrière en conseil, où j'ai appris à parler à la fois le langage des affaires et celui du code.",
@@ -266,12 +285,12 @@ const TRANSLATIONS = {
     contact_tag:          'Contact',
     contact_heading:      'Parlons-en',
     contact_subtitle:     "Vous avez un projet intéressant ou une opportunité à explorer ? Écrivez-moi.",
-    form_notice:          "Ce formulaire est une démonstration et n'envoie pas de données réelles. Pour un vrai contact, utilisez l'email ou LinkedIn.",
+    form_notice:          "Remplissez le formulaire et je vous répondrai dans les plus brefs délais. Vous pouvez aussi me contacter directement par e-mail ou LinkedIn.",
     form_name:            'Nom complet',
     form_email:           'Adresse e-mail',
     form_message:         'Message',
     form_submit:          'Envoyer le message',
-    form_success:         '✓ Message de démonstration envoyé avec succès.',
+    form_success:         '✓ Message envoyé ! Je vous répondrai bientôt par e-mail.',
     form_error:           '⚠ Veuillez remplir correctement tous les champs.',
     contact_info_heading: 'Retrouvez-moi sur',
     availability_title:   'Disponible pour des projets',
@@ -301,147 +320,330 @@ const TRANSLATIONS = {
  *  - achievements:    Array de 3 logros cuantificables (verbos de acción)
  */
 const EXPERIENCE = [
+  /* ─── 1. ROL ACTUAL ─────────────────────────────────────────────────────── */
   {
-    role: { es: 'Data Analyst & Product Owner Senior', en: 'Senior Data Analyst & Product Owner', fr: 'Analyste de Données & Product Owner Senior' },
-    company: 'TechNova Solutions S.A.',
-    location: { es: 'Madrid, España (Remoto)', en: 'Madrid, Spain (Remote)', fr: 'Madrid, Espagne (Télétravail)' },
-    period: { es: 'Mar 2022 – Presente', en: 'Mar 2022 – Present', fr: 'Mar 2022 – Présent' },
+    role: {
+      es: 'AI Business Analyst / AI Automation Analyst',
+      en: 'AI Business Analyst / AI Automation Analyst',
+      fr: 'Analyste Métier IA / Analyste en Automatisation IA',
+    },
+    company: 'Promesa Latina',
+    location: {
+      es: 'California, EE.UU. (Remoto)',
+      en: 'California, USA (Remote)',
+      fr: 'Californie, États-Unis (Télétravail)',
+    },
+    period: {
+      es: 'Feb 2025 – Presente',
+      en: 'Feb 2025 – Present',
+      fr: 'Fév 2025 – Présent',
+    },
     description: {
-      es: 'Lidero el área de datos de una fintech B2B con presencia en 5 países, diseñando dashboards ejecutivos y definiendo la estrategia de producto basada en comportamiento de usuarios.',
-      en: 'I lead the data division of a B2B fintech operating in 5 countries, designing executive dashboards and defining product strategy based on user behavior.',
-      fr: 'Je dirige le département données d\'une fintech B2B présente dans 5 pays, concevant des tableaux de bord exécutifs et définissant la stratégie produit basée sur le comportement utilisateur.',
+      es: 'Lidero la creación de una aplicación web B2B para Promesa Latina, abarcando el análisis, diseño, desarrollo e implementación asistido por inteligencia artificial, coordinando equipos multidisciplinarios bajo metodologías ágiles.',
+      en: 'I lead the creation of a B2B web application for Promesa Latina, covering analysis, design, development and AI-assisted implementation, coordinating multidisciplinary teams using agile methodologies.',
+      fr: 'Je dirige la création d\'une application web B2B pour Promesa Latina, couvrant l\'analyse, la conception, le développement et la mise en œuvre assistée par IA, en coordonnant des équipes multidisciplinaires selon des méthodologies agiles.',
     },
     responsibilities: {
       es: [
-        'Diseñar y mantener modelos de datos en BigQuery para análisis de cohortes y churn prediction',
-        'Definir y priorizar el backlog del equipo de datos con base en los OKRs del negocio',
-        'Coordinar con stakeholders de C-Level para traducir necesidades de negocio en requisitos técnicos',
-        'Supervisar un equipo de 4 analistas junior y 2 ingenieros de datos',
-        'Crear reportes automatizados en Looker Studio y Power BI para 12 clientes enterprise',
+        'Levantamiento y análisis de requerimientos con stakeholders',
+        'Traducción de necesidades de negocio en soluciones tecnológicas escalables',
+        'Diseño funcional y definición de arquitectura de la solución',
+        'Desarrollo de la aplicación utilizando herramientas y capacidades de inteligencia artificial',
+        'Automatización de procesos clave para optimizar la operación',
+        'Validación de funcionalidades y aseguramiento de la calidad del producto',
+        'Gestión del ciclo de vida del producto desde la concepción hasta producción',
       ],
       en: [
-        'Design and maintain data models in BigQuery for cohort analysis and churn prediction',
-        'Define and prioritize the data team backlog based on business OKRs',
-        'Coordinate with C-Level stakeholders to translate business needs into technical requirements',
-        'Supervise a team of 4 junior analysts and 2 data engineers',
-        'Build automated reports in Looker Studio and Power BI for 12 enterprise clients',
+        'Requirements gathering and analysis with stakeholders',
+        'Translating business needs into scalable technology solutions',
+        'Functional design and solution architecture definition',
+        'Application development using artificial intelligence tools and capabilities',
+        'Automation of key processes to optimize operations',
+        'Feature validation and product quality assurance',
+        'Product lifecycle management from conception to production',
       ],
       fr: [
-        'Concevoir et maintenir des modèles de données dans BigQuery pour l\'analyse de cohortes et la prédiction du churn',
-        'Définir et prioriser le backlog de l\'équipe data selon les OKR de l\'entreprise',
-        'Coordonner avec les parties prenantes C-Level pour traduire les besoins métier en exigences techniques',
-        'Superviser une équipe de 4 analystes juniors et 2 ingénieurs data',
-        'Créer des rapports automatisés dans Looker Studio et Power BI pour 12 clients enterprise',
+        'Recueil et analyse des exigences avec les parties prenantes',
+        'Traduction des besoins métier en solutions technologiques évolutives',
+        'Conception fonctionnelle et définition de l\'architecture de la solution',
+        'Développement de l\'application à l\'aide d\'outils d\'intelligence artificielle',
+        'Automatisation des processus clés pour optimiser les opérations',
+        'Validation des fonctionnalités et assurance qualité du produit',
+        'Gestion du cycle de vie du produit de la conception à la mise en production',
       ],
     },
     achievements: {
       es: [
-        'Reduje el tiempo de generación de reportes en un 65% mediante automatización con Python y BigQuery',
-        'Aumenté la retención de clientes en un 18% implementando un modelo predictivo de churn con 87% de precisión',
-        'Lideré migración de datos legacy → cloud (GCP) en 4 meses, sin interrupción del servicio',
+        'Implementación exitosa de una solución B2B alineada a los objetivos del negocio',
+        'Reducción de tiempos operativos mediante la automatización de procesos clave',
+        'Entrega del producto en tiempos definidos cumpliendo estándares de calidad, generando valor mediante el uso estratégico de IA',
       ],
       en: [
-        'Reduced report generation time by 65% through automation with Python and BigQuery',
-        'Increased customer retention by 18% by implementing a churn prediction model with 87% accuracy',
-        'Led legacy data migration to the cloud (GCP) in 4 months with zero service interruptions',
+        'Successful implementation of a B2B solution aligned with business objectives',
+        'Reduction of operational time through automation of key processes',
+        'Product delivery within defined timelines meeting quality standards, generating value through strategic use of AI',
       ],
       fr: [
-        'Réduit le temps de génération de rapports de 65% grâce à l\'automatisation Python et BigQuery',
-        'Augmenté la rétention client de 18% en implémentant un modèle de prédiction du churn (87% de précision)',
-        'Piloté la migration des données legacy vers le cloud (GCP) en 4 mois sans interruption de service',
+        'Implémentation réussie d\'une solution B2B alignée sur les objectifs métier',
+        'Réduction des délais opérationnels grâce à l\'automatisation des processus clés',
+        'Livraison du produit dans les délais définis selon les normes de qualité, créant de la valeur par l\'utilisation stratégique de l\'IA',
       ],
     },
   },
+
+  /* ─── 2. ELANIIN ────────────────────────────────────────────────────────── */
   {
-    role: { es: 'Scrum Master & Analista de Datos', en: 'Scrum Master & Data Analyst', fr: 'Scrum Master & Analyste de Données' },
-    company: 'Ibertech Digital S.L.',
-    location: { es: 'Barcelona, España', en: 'Barcelona, Spain', fr: 'Barcelone, Espagne' },
-    period: { es: 'Jun 2019 – Feb 2022', en: 'Jun 2019 – Feb 2022', fr: 'Juin 2019 – Fév 2022' },
+    role: {
+      es: 'Product Owner / Scrum Master',
+      en: 'Product Owner / Scrum Master',
+      fr: 'Product Owner / Scrum Master',
+    },
+    company: 'Elaniin',
+    location: {
+      es: 'El Salvador (Híbrido)',
+      en: 'El Salvador (Hybrid)',
+      fr: 'El Salvador (Hybride)',
+    },
+    period: {
+      es: 'Oct 2022 – Oct 2024',
+      en: 'Oct 2022 – Oct 2024',
+      fr: 'Oct 2022 – Oct 2024',
+    },
     description: {
-      es: 'Ejercí un rol dual como Scrum Master de dos squads de desarrollo y analista de datos para el área de e-commerce de un retailer omnicanal con €120M de facturación anual.',
-      en: 'I held a dual role as Scrum Master for two development squads and data analyst for the e-commerce division of an omnichannel retailer with €120M annual turnover.',
-      fr: 'J\'ai occupé un double rôle de Scrum Master pour deux squads de développement et d\'analyste de données pour le département e-commerce d\'un distributeur omnicanal avec 120 M€ de chiffre d\'affaires annuel.',
+      es: 'Ejercí un rol dual como Product Owner y Scrum Master en proyectos de desarrollo de software, liderando la visión del producto, la gestión del backlog y la facilitación de equipos ágiles.',
+      en: 'I held a dual role as Product Owner and Scrum Master in software development projects, leading product vision, backlog management and agile team facilitation.',
+      fr: 'J\'ai occupé un double rôle de Product Owner et Scrum Master dans des projets de développement logiciel, dirigeant la vision produit, la gestion du backlog et la facilitation des équipes agiles.',
     },
     responsibilities: {
       es: [
-        'Facilitar ceremonias Scrum (Sprint Planning, Daily, Review, Retrospective) para 2 equipos de 7 personas cada uno',
-        'Construir y mantener dashboards de KPIs en Tableau para el equipo de marketing y dirección',
-        'Realizar análisis de funnel de conversión y A/B testing para la plataforma e-commerce',
-        'Eliminar impedimentos técnicos y organizativos que bloqueaban la entrega de valor',
+        'Planificación y organización del Roadmap y plan de trabajo del producto',
+        'Gestión de stakeholders y comunicación con áreas de negocio',
+        'Definición de requisitos y alcance del MVP',
+        'Priorización y refinamiento del backlog',
+        'Facilitación de ceremonias Scrum (Planning, Daily, Review, Retrospective)',
+        'Eliminación proactiva de bloqueos del equipo',
+        'Seguimiento de métricas de entrega y calidad',
       ],
       en: [
-        'Facilitate Scrum ceremonies (Sprint Planning, Daily, Review, Retrospective) for 2 teams of 7 people each',
-        'Build and maintain KPI dashboards in Tableau for marketing and management teams',
-        'Conduct funnel analysis and A/B testing for the e-commerce platform',
-        'Remove technical and organizational impediments blocking value delivery',
+        'Planning and organizing the product Roadmap and work plan',
+        'Stakeholder management and communication with business areas',
+        'Requirements definition and MVP scope',
+        'Backlog prioritization and refinement',
+        'Facilitation of Scrum ceremonies (Planning, Daily, Review, Retrospective)',
+        'Proactive removal of team blockers',
+        'Tracking delivery and quality metrics',
       ],
       fr: [
-        'Faciliter les cérémonies Scrum (Sprint Planning, Daily, Review, Rétrospective) pour 2 équipes de 7 personnes',
-        'Construire et maintenir des tableaux de bord KPI dans Tableau pour le marketing et la direction',
-        'Mener des analyses de funnel de conversion et des tests A/B pour la plateforme e-commerce',
-        'Supprimer les obstacles techniques et organisationnels bloquant la livraison de valeur',
+        'Planification et organisation de la Roadmap produit et du plan de travail',
+        'Gestion des parties prenantes et communication avec les équipes métier',
+        'Définition des exigences et périmètre du MVP',
+        'Priorisation et affinage du backlog',
+        'Facilitation des cérémonies Scrum (Planning, Daily, Review, Rétrospective)',
+        'Suppression proactive des blocages de l\'équipe',
+        'Suivi des métriques de livraison et de qualité',
       ],
     },
     achievements: {
       es: [
-        'Mejoré la velocidad de entrega del equipo en un 40% en 3 sprints aplicando prácticas XP complementarias',
-        'Identifiqué punto de abandono en el checkout que generaba €400K/año en pérdidas; propuse e implementé fix',
-        'Obtuve certificación PSM I y PSM II durante mi tenure, convirtiéndome en referente interno de Agile',
+        'Lideré proyectos web de alto impacto: elsalvadorpei.migracion.gob.sv y pasaporteenlinea.migracion.gob.sv',
+        'Desarrollo y capacitación en tableros de información migratoria para la Dirección General de Migración y Extranjería',
+        'Gestión exitosa de múltiples productos simultáneos manteniendo alineación con objetivos estratégicos',
       ],
       en: [
-        'Improved team delivery velocity by 40% in 3 sprints by implementing complementary XP practices',
-        'Identified a checkout drop-off point generating €400K/year in losses; proposed and implemented the fix',
-        'Obtained PSM I and PSM II certifications during my tenure, becoming the internal Agile reference',
+        'Led high-impact web projects: elsalvadorpei.migracion.gob.sv and pasaporteenlinea.migracion.gob.sv',
+        'Developed and trained stakeholders on migration information dashboards for the General Directorate of Migration',
+        'Successful management of multiple simultaneous products maintaining alignment with strategic objectives',
       ],
       fr: [
-        'Amélioré la vélocité de livraison de l\'équipe de 40% en 3 sprints grâce aux pratiques XP complémentaires',
-        'Identifié un point d\'abandon au checkout générant 400 K€/an de pertes ; proposé et implémenté le correctif',
-        'Obtenu les certifications PSM I et PSM II pendant mon mandat, devenant la référence Agile interne',
+        'Dirigé des projets web à fort impact : elsalvadorpei.migracion.gob.sv et pasaporteenlinea.migracion.gob.sv',
+        'Développement et formation aux tableaux de bord d\'information migratoire pour la Direction Générale de Migration',
+        'Gestion réussie de plusieurs produits simultanés en maintenant l\'alignement avec les objectifs stratégiques',
       ],
     },
   },
+
+  /* ─── 3. SECRETARÍA DE INNOVACIÓN ──────────────────────────────────────── */
   {
-    role: { es: 'Analista de Datos Junior', en: 'Junior Data Analyst', fr: 'Analyste de Données Junior' },
-    company: 'DataFirst Consulting',
-    location: { es: 'Madrid, España', en: 'Madrid, Spain', fr: 'Madrid, Espagne' },
-    period: { es: 'Sep 2017 – May 2019', en: 'Sep 2017 – May 2019', fr: 'Sep 2017 – Mai 2019' },
+    role: {
+      es: 'IT Project Manager',
+      en: 'IT Project Manager',
+      fr: 'Chef de Projet IT',
+    },
+    company: 'Secretaría de Innovación',
+    location: {
+      es: 'El Salvador',
+      en: 'El Salvador',
+      fr: 'El Salvador',
+    },
+    period: {
+      es: 'Ago 2020 – Oct 2022',
+      en: 'Aug 2020 – Oct 2022',
+      fr: 'Août 2020 – Oct 2022',
+    },
     description: {
-      es: 'Inicié mi carrera en una consultora especializada en inteligencia de negocio, colaborando en proyectos de analítica para clientes de los sectores retail, banca y seguros.',
-      en: 'I started my career at a business intelligence consulting firm, collaborating on analytics projects for clients in retail, banking, and insurance.',
-      fr: 'J\'ai débuté ma carrière dans un cabinet de conseil spécialisé en business intelligence, collaborant à des projets analytiques pour des clients dans les secteurs retail, bancaire et assurance.',
+      es: 'Gestioné programas y proyectos tecnológicos impulsados por la institución gubernamental, asegurando la planificación, seguimiento y control de iniciativas de innovación digital.',
+      en: 'I managed technology programs and projects driven by the government institution, ensuring planning, monitoring and control of digital innovation initiatives.',
+      fr: 'J\'ai géré des programmes et projets technologiques portés par l\'institution gouvernementale, assurant la planification, le suivi et le contrôle des initiatives d\'innovation numérique.',
     },
     responsibilities: {
       es: [
-        'Limpiar, transformar y validar datasets de más de 10M de registros con Python (Pandas) y SQL',
-        'Desarrollar visualizaciones de datos en Power BI y presentarlas a clientes',
-        'Apoyar al equipo senior en la redacción de propuestas técnicas y análisis de requerimientos',
+        'Gestión de programas y proyectos tecnológicos institucionales',
+        'Planificación, seguimiento y control de proyectos de innovación digital',
+        'Coordinación con equipos internos y proveedores externos',
+        'Reporte de avance a dirección y stakeholders gubernamentales',
       ],
       en: [
-        'Clean, transform and validate datasets of over 10M records using Python (Pandas) and SQL',
-        'Develop data visualizations in Power BI and present them to clients',
-        'Support the senior team in writing technical proposals and requirements analysis',
+        'Management of institutional technology programs and projects',
+        'Planning, monitoring and control of digital innovation projects',
+        'Coordination with internal teams and external vendors',
+        'Progress reporting to management and government stakeholders',
       ],
       fr: [
-        'Nettoyer, transformer et valider des jeux de données de plus de 10 M d\'enregistrements avec Python (Pandas) et SQL',
-        'Développer des visualisations de données dans Power BI et les présenter aux clients',
-        'Assister l\'équipe senior dans la rédaction de propositions techniques et l\'analyse des besoins',
+        'Gestion des programmes et projets technologiques institutionnels',
+        'Planification, suivi et contrôle des projets d\'innovation numérique',
+        'Coordination avec les équipes internes et les prestataires externes',
+        'Reporting d\'avancement à la direction et aux parties prenantes gouvernementales',
       ],
     },
     achievements: {
       es: [
-        'Automaticé el proceso de ingesta de datos mensual de un cliente bancario, ahorrando 20h/mes al equipo',
-        'Creé un modelo de segmentación RFM que aumentó la efectividad de campañas de email en un 32%',
-        'Fui promovida a analista mid-level 8 meses antes de lo previsto por desempeño excepcional',
+        'Gestión exitosa de proyectos de transformación digital de alto impacto institucional',
+        'Implementación de marcos de seguimiento que mejoraron la visibilidad y control de los proyectos',
+        'Coordinación efectiva entre áreas técnicas y decisores de nivel ejecutivo',
       ],
       en: [
-        'Automated a banking client\'s monthly data ingestion process, saving the team 20 hours/month',
-        'Created an RFM segmentation model that increased email campaign effectiveness by 32%',
-        'Promoted to mid-level analyst 8 months ahead of schedule due to exceptional performance',
+        'Successful management of high-impact institutional digital transformation projects',
+        'Implementation of monitoring frameworks that improved project visibility and control',
+        'Effective coordination between technical areas and executive-level decision makers',
       ],
       fr: [
-        'Automatisé le processus d\'ingestion mensuelle des données d\'un client bancaire, économisant 20h/mois à l\'équipe',
-        'Créé un modèle de segmentation RFM ayant augmenté l\'efficacité des campagnes email de 32%',
-        'Promue analyste mid-level 8 mois avant le délai prévu pour performance exceptionnelle',
+        'Gestion réussie de projets de transformation numérique à fort impact institutionnel',
+        'Mise en œuvre de cadres de suivi ayant amélioré la visibilité et le contrôle des projets',
+        'Coordination efficace entre les équipes techniques et les décideurs de niveau exécutif',
+      ],
+    },
+  },
+
+  /* ─── 4. UJMD ───────────────────────────────────────────────────────────── */
+  {
+    role: {
+      es: 'Coordinadora de Operaciones IT',
+      en: 'IT Operations Coordinator',
+      fr: 'Coordinatrice des Opérations IT',
+    },
+    company: 'Universidad Dr. José Matías Delgado (UJMD)',
+    location: {
+      es: 'El Salvador',
+      en: 'El Salvador',
+      fr: 'El Salvador',
+    },
+    period: {
+      es: 'Jul 2019 – Jul 2020',
+      en: 'Jul 2019 – Jul 2020',
+      fr: 'Juil 2019 – Juil 2020',
+    },
+    description: {
+      es: 'Coordiné la operación de laboratorios de cómputo universitarios e implementé metodología Scrum en el área IT, además de gestionar el presupuesto de la Dirección de Tecnología.',
+      en: 'I coordinated the operation of university computer labs and implemented Scrum methodology in the IT area, as well as managing the Technology Directorate budget.',
+      fr: 'J\'ai coordonné le fonctionnement des laboratoires informatiques universitaires et mis en place la méthodologie Scrum dans le département IT, tout en gérant le budget de la Direction Technologie.',
+    },
+    responsibilities: {
+      es: [
+        'Supervisión y coordinación de laboratorios de cómputo universitarios',
+        'Implementación del marco de trabajo Scrum en el área IT',
+        'Elaboración y administración del presupuesto de la Dirección de IT',
+      ],
+      en: [
+        'Supervision and coordination of university computer labs',
+        'Implementation of the Scrum framework in the IT area',
+        'Preparation and management of the IT Directorate budget',
+      ],
+      fr: [
+        'Supervision et coordination des laboratoires informatiques universitaires',
+        'Mise en œuvre du cadre Scrum au sein du département IT',
+        'Élaboration et gestion du budget de la Direction IT',
+      ],
+    },
+    achievements: {
+      es: [
+        'Introducción exitosa de Scrum como metodología de trabajo en el área IT de la universidad',
+        'Optimización de la gestión operativa y presupuestaria de la Dirección de Tecnología',
+        'Mejora en la disponibilidad y coordinación de recursos tecnológicos para estudiantes y docentes',
+      ],
+      en: [
+        'Successful introduction of Scrum as a working methodology in the university IT area',
+        'Optimization of operational and budget management in the Technology Directorate',
+        'Improved availability and coordination of technology resources for students and faculty',
+      ],
+      fr: [
+        'Introduction réussie de Scrum comme méthodologie de travail dans le département IT universitaire',
+        'Optimisation de la gestion opérationnelle et budgétaire de la Direction Technologie',
+        'Amélioration de la disponibilité et coordination des ressources technologiques pour étudiants et enseignants',
+      ],
+    },
+  },
+
+  /* ─── 5. AVIANCA ────────────────────────────────────────────────────────── */
+  {
+    role: {
+      es: 'Product Owner / Scrum Master',
+      en: 'Product Owner / Scrum Master',
+      fr: 'Product Owner / Scrum Master',
+    },
+    company: 'Avianca',
+    location: {
+      es: 'El Salvador',
+      en: 'El Salvador',
+      fr: 'El Salvador',
+    },
+    period: {
+      es: 'Abr 2015 – Ene 2018',
+      en: 'Apr 2015 – Jan 2018',
+      fr: 'Avr 2015 – Jan 2018',
+    },
+    description: {
+      es: 'Ejercí como Product Owner y Scrum Master en proyectos de desarrollo tecnológico para una de las aerolíneas más importantes de Latinoamérica, liderando el análisis de procesos y la gestión ágil de equipos.',
+      en: 'I served as Product Owner and Scrum Master in technology development projects for one of Latin America\'s most important airlines, leading process analysis and agile team management.',
+      fr: 'J\'ai exercé en tant que Product Owner et Scrum Master dans des projets de développement technologique pour l\'une des compagnies aériennes les plus importantes d\'Amérique Latine.',
+    },
+    responsibilities: {
+      es: [
+        'Análisis de procesos funcionales y reglas de negocio',
+        'Elaboración de Historias de Usuario y criterios de aceptación',
+        'Facilitación de ceremonias Scrum',
+        'Planeación, organización y ejecución de Sprints',
+        'Desbloqueo de impedimentos del equipo',
+      ],
+      en: [
+        'Analysis of functional processes and business rules',
+        'Writing User Stories and acceptance criteria',
+        'Facilitation of Scrum ceremonies',
+        'Sprint planning, organization and execution',
+        'Team impediment removal',
+      ],
+      fr: [
+        'Analyse des processus fonctionnels et des règles métier',
+        'Rédaction des User Stories et critères d\'acceptation',
+        'Facilitation des cérémonies Scrum',
+        'Planification, organisation et exécution des Sprints',
+        'Levée des obstacles de l\'équipe',
+      ],
+    },
+    achievements: {
+      es: [
+        'Desarrollo e implementación de 60 reportes para el Proyecto SimpliFy de Avianca Holdings',
+        'Publicación exitosa en producción: simple.sv',
+        'Gestión ágil de proyectos en entorno de alta complejidad y múltiples partes interesadas internacionales',
+      ],
+      en: [
+        'Development and implementation of 60 reports for the Avianca Holdings SimpliFy Project',
+        'Successful production launch: simple.sv',
+        'Agile project management in a high-complexity environment with multiple international stakeholders',
+      ],
+      fr: [
+        'Développement et implémentation de 60 rapports pour le projet SimpliFy d\'Avianca Holdings',
+        'Mise en production réussie : simple.sv',
+        'Gestion agile de projets dans un environnement complexe avec de multiples parties prenantes internationales',
       ],
     },
   },
@@ -455,22 +657,12 @@ const EDUCATION = [
   {
     icon: '🎓',
     degree: {
-      es: 'Grado en Ingeniería Informática',
-      en: 'B.Sc. in Computer Science',
-      fr: 'Licence en Informatique',
+      es: 'Ingeniería en Sistemas Informáticos',
+      en: 'B.Sc. in Computer Systems Engineering',
+      fr: 'Ingénierie en Systèmes Informatiques',
     },
-    institution: 'Universidad Politécnica de Madrid',
-    period: '2013 – 2017',
-  },
-  {
-    icon: '📊',
-    degree: {
-      es: 'Máster en Ciencia de Datos e IA',
-      en: 'M.Sc. in Data Science & AI',
-      fr: 'Master en Science des Données & IA',
-    },
-    institution: 'IE Business School',
-    period: '2019 – 2020',
+    institution: 'Universidad de El Salvador',
+    period: 'Dic 2015',
   },
 ];
 
@@ -479,12 +671,12 @@ const EDUCATION = [
  * INSTRUCCIONES: Cada objeto representa una certificación o curso relevante.
  */
 const CERTIFICATIONS = [
-  { icon: '🏅', name: 'Professional Scrum Master I (PSM I)', institution: 'Scrum.org', year: '2019' },
-  { icon: '🏅', name: 'Professional Scrum Master II (PSM II)', institution: 'Scrum.org', year: '2021' },
-  { icon: '🏅', name: 'Professional Scrum Product Owner (PSPO I)', institution: 'Scrum.org', year: '2021' },
-  { icon: '🏅', name: 'Google Data Analytics Professional Certificate', institution: 'Google / Coursera', year: '2022' },
-  { icon: '🏅', name: 'AWS Cloud Practitioner', institution: 'Amazon Web Services', year: '2023' },
-  { icon: '🏅', name: 'dbt Analytics Engineering', institution: 'dbt Labs', year: '2023' },
+  { icon: '🏅', name: 'Cloud Digital Leader Certification', institution: 'Google', year: '2024' },
+  { icon: '🏅', name: 'Científica de Datos — Bootcamp Data Science', institution: 'Intech MOM Latam', year: '2024' },
+  { icon: '🏅', name: 'Preparación para Certificación PMP (35 hrs)', institution: 'Certificacionpm', year: '2021' },
+  { icon: '🏅', name: 'Big Data & Business Analytics', institution: 'Data Science Institute Latam', year: '2020' },
+  { icon: '🏅', name: 'Diplomado Experto en Business Intelligence', institution: 'Centro Europeo de Postgrado (CEUPE)', year: '2018' },
+  { icon: '🏅', name: 'Scrum Master (ID: 577652)', institution: 'SCRUMstudy', year: '2017' },
 ];
 
 /**
@@ -497,49 +689,48 @@ const CERTIFICATIONS = [
  */
 const SKILLS = [
   {
+    catIcon: '🤖',
+    category: { es: 'IA & Automatización', en: 'AI & Automation', fr: 'IA & Automatisation' },
+    type: 'bars',
+    items: [
+      { name: 'Prompt Engineering & AI Tools (ChatGPT, Claude, Copilot)', level: 90 },
+      { name: 'Automatización de procesos con IA', level: 85 },
+      { name: 'Análisis de requerimientos asistido por IA', level: 88 },
+      { name: 'Power Automate / n8n / Make', level: 70 },
+    ],
+  },
+  {
     catIcon: '📊',
-    category: { es: 'Análisis de Datos', en: 'Data Analysis', fr: 'Analyse de Données' },
+    category: { es: 'Datos & Reporting', en: 'Data & Reporting', fr: 'Données & Reporting' },
     type: 'bars',
     items: [
-      { name: 'SQL (BigQuery, PostgreSQL)', level: 95 },
-      { name: 'Python (Pandas, NumPy, Scikit-learn)', level: 88 },
-      { name: 'R (tidyverse)', level: 72 },
-      { name: 'dbt (data build tool)', level: 80 },
-    ],
-  },
-  {
-    catIcon: '📈',
-    category: { es: 'Visualización de Datos', en: 'Data Visualization', fr: 'Visualisation de Données' },
-    type: 'bars',
-    items: [
-      { name: 'Power BI', level: 90 },
-      { name: 'Looker Studio / Looker', level: 85 },
-      { name: 'Tableau', level: 78 },
-      { name: 'Matplotlib / Seaborn', level: 75 },
-    ],
-  },
-  {
-    catIcon: '⚙️',
-    category: { es: 'Ingeniería de Datos & Cloud', en: 'Data Engineering & Cloud', fr: 'Ingénierie Données & Cloud' },
-    type: 'bars',
-    items: [
-      { name: 'Google BigQuery (GCP)', level: 88 },
-      { name: 'Apache Airflow', level: 70 },
-      { name: 'AWS (S3, Redshift, Glue)', level: 65 },
-      { name: 'Docker / Git', level: 80 },
+      { name: 'Power BI', level: 85 },
+      { name: 'SQL', level: 80 },
+      { name: 'Google Looker Studio', level: 75 },
+      { name: 'Excel / Google Sheets', level: 90 },
     ],
   },
   {
     catIcon: '🔄',
     category: { es: 'Metodologías Ágiles', en: 'Agile Methodologies', fr: 'Méthodologies Agiles' },
     type: 'tags',
-    tags: ['Scrum', 'Kanban', 'SAFe', 'XP', 'OKRs', 'User Story Mapping', 'Impact Mapping', 'Lean Startup', 'Design Thinking'],
+    tags: ['Scrum', 'Kanban', 'SAFe', 'OKRs', 'User Story Mapping', 'Design Thinking', 'Lean', 'Sprint Planning', 'Backlog Refinement'],
   },
   {
     catIcon: '🛠️',
-    category: { es: 'Herramientas & Otros', en: 'Tools & Other', fr: 'Outils & Autres' },
+    category: { es: 'Herramientas & Gestión', en: 'Tools & Management', fr: 'Outils & Gestion' },
     type: 'tags',
-    tags: ['Jira', 'Confluence', 'Notion', 'Miro', 'Figma', 'Slack', 'GitHub', 'Jupyter', 'VS Code', 'Postman'],
+    tags: ['Jira', 'Confluence', 'Open Project', 'Notion', 'Miro', 'Figma', 'Slack', 'Google Drive', 'GitHub', 'Microsoft Office'],
+  },
+  {
+    catIcon: '🌍',
+    category: { es: 'Idiomas', en: 'Languages', fr: 'Langues' },
+    type: 'bars',
+    items: [
+      { name: 'Español', level: 100 },
+      { name: 'Inglés', level: 75 },
+      { name: 'Francés', level: 50 },
+    ],
   },
 ];
 
@@ -552,82 +743,72 @@ const SKILLS = [
  */
 const PROJECTS = [
   {
-    emoji: '📉',
-    title: { es: 'Dashboard de Churn Prediction', en: 'Churn Prediction Dashboard', fr: 'Tableau de Bord de Prédiction du Churn' },
-    description: {
-      es: 'Pipeline de ML + dashboard en tiempo real para predecir abandono de clientes en una plataforma SaaS B2B. Modelo Random Forest con 87% de accuracy desplegado en GCP.',
-      en: 'ML pipeline + real-time dashboard to predict customer churn on a B2B SaaS platform. Random Forest model with 87% accuracy deployed on GCP.',
-      fr: 'Pipeline ML + tableau de bord en temps réel pour prédire le churn client sur une plateforme SaaS B2B. Modèle Random Forest avec 87% de précision déployé sur GCP.',
+    emoji: '🌐',
+    title: {
+      es: 'Portal PEI — Migración El Salvador',
+      en: 'PEI Portal — El Salvador Migration',
+      fr: 'Portail PEI — Migration El Salvador',
     },
-    stack: ['Python', 'BigQuery', 'Scikit-learn', 'Looker Studio', 'Airflow', 'GCP'],
-    role: { es: 'Data Analyst · ML Engineer', en: 'Data Analyst · ML Engineer', fr: 'Analyste Données · ML Engineer' },
-    demoUrl: 'https://demo.ejemplo.com/churn-dashboard', /* REEMPLAZA con tu URL real */
-    codeUrl: 'https://github.com/tuusuario/churn-dashboard', /* REEMPLAZA con tu URL real */
+    description: {
+      es: 'Plataforma web gubernamental para el Programa de Emigrantes de El Salvador. Lideré el rol de Product Owner & Scrum Master, gestionando el ciclo de vida completo del producto para la Dirección General de Migración y Extranjería.',
+      en: 'Government web platform for El Salvador\'s Emigrant Program. Led the Product Owner & Scrum Master role, managing the complete product lifecycle for the General Directorate of Migration.',
+      fr: 'Plateforme web gouvernementale pour le Programme des Émigrés d\'El Salvador. Rôle de Product Owner & Scrum Master, gestion du cycle de vie complet du produit pour la Direction Générale de Migration.',
+    },
+    stack: ['Product Ownership', 'Scrum', 'Gestión de Stakeholders', 'Roadmap'],
+    role: { es: 'Product Owner / Scrum Master', en: 'Product Owner / Scrum Master', fr: 'Product Owner / Scrum Master' },
+    demoUrl: 'https://elsalvadorpei.migracion.gob.sv/',
+    codeUrl: null,
   },
   {
-    emoji: '🛒',
-    title: { es: 'Análisis de Funnel E-Commerce', en: 'E-Commerce Funnel Analysis', fr: 'Analyse du Funnel E-Commerce' },
-    description: {
-      es: 'Análisis completo del embudo de conversión de un retailer omnicanal. Identificación de drop-off points, experimentos A/B y recomendaciones que generaron +18% en conversión.',
-      en: 'Full conversion funnel analysis for an omnichannel retailer. Drop-off point identification, A/B experiments and recommendations yielding +18% in conversion.',
-      fr: 'Analyse complète du funnel de conversion d\'un distributeur omnicanal. Identification des points d\'abandon, expériences A/B et recommandations ayant généré +18% de conversion.',
+    emoji: '🛂',
+    title: {
+      es: 'Pasaporte en Línea — Migración El Salvador',
+      en: 'Online Passport — El Salvador Migration',
+      fr: 'Passeport en Ligne — Migration El Salvador',
     },
-    stack: ['SQL', 'Python', 'Tableau', 'Google Analytics 4', 'Excel'],
-    role: { es: 'Data Analyst', en: 'Data Analyst', fr: 'Analyste de Données' },
-    demoUrl: 'https://demo.ejemplo.com/ecommerce-funnel',
-    codeUrl: 'https://github.com/tuusuario/ecommerce-funnel',
+    description: {
+      es: 'Sistema en línea para trámite de pasaportes salvadoreños. Coordiné el desarrollo y despliegue como PO/SM, incluyendo tableros de información migratoria y capacitación a usuarios institucionales.',
+      en: 'Online system for Salvadoran passport processing. Coordinated development and deployment as PO/SM, including migration information dashboards and institutional user training.',
+      fr: 'Système en ligne pour le traitement des passeports salvadoriens. Coordination du développement et déploiement en tant que PO/SM, incluant des tableaux de bord d\'information migratoire.',
+    },
+    stack: ['Product Ownership', 'Scrum', 'Dashboards', 'Capacitación'],
+    role: { es: 'Product Owner / Scrum Master', en: 'Product Owner / Scrum Master', fr: 'Product Owner / Scrum Master' },
+    demoUrl: 'https://pasaporteenlinea.migracion.gob.sv',
+    codeUrl: null,
   },
   {
-    emoji: '📦',
-    title: { es: 'Data Warehouse en GCP con dbt', en: 'GCP Data Warehouse with dbt', fr: 'Data Warehouse GCP avec dbt' },
-    description: {
-      es: 'Diseño e implementación de un DWH en Google BigQuery con dbt para una empresa de logística. Modelos dimensionales (Kimball) y 35+ transformaciones documentadas.',
-      en: 'Design and implementation of a DWH on Google BigQuery with dbt for a logistics company. Dimensional models (Kimball) and 35+ documented transformations.',
-      fr: 'Conception et implémentation d\'un DWH sur Google BigQuery avec dbt pour une entreprise logistique. Modèles dimensionnels (Kimball) et 35+ transformations documentées.',
+    emoji: '✈️',
+    title: {
+      es: 'Proyecto SimpliFy — Avianca Holdings',
+      en: 'SimpliFy Project — Avianca Holdings',
+      fr: 'Projet SimpliFy — Avianca Holdings',
     },
-    stack: ['BigQuery', 'dbt', 'Airflow', 'Python', 'Looker', 'Terraform'],
-    role: { es: 'Data Engineer · Analytics Engineer', en: 'Data Engineer · Analytics Engineer', fr: 'Data Engineer · Analytics Engineer' },
-    demoUrl: 'https://demo.ejemplo.com/dwh-dbt',
-    codeUrl: 'https://github.com/tuusuario/dwh-dbt',
+    description: {
+      es: 'Desarrollo e implementación de 60 reportes de negocio para Avianca Holdings dentro del proyecto SimpliFy. Gestioné el análisis de procesos funcionales, historias de usuario y ceremonias Scrum en un entorno de alta complejidad.',
+      en: 'Development and implementation of 60 business reports for Avianca Holdings within the SimpliFy project. Managed functional process analysis, user stories and Scrum ceremonies in a high-complexity environment.',
+      fr: 'Développement et implémentation de 60 rapports métier pour Avianca Holdings dans le cadre du projet SimpliFy. Gestion de l\'analyse des processus fonctionnels, des user stories et des cérémonies Scrum.',
+    },
+    stack: ['Scrum', 'Análisis de Negocio', 'Reporting', 'User Stories'],
+    role: { es: 'Product Owner / Scrum Master', en: 'Product Owner / Scrum Master', fr: 'Product Owner / Scrum Master' },
+    demoUrl: 'https://simple.sv/',
+    codeUrl: null,
   },
   {
-    emoji: '🎯',
-    title: { es: 'OKR Tracker Agile — Herramienta interna', en: 'Agile OKR Tracker — Internal Tool', fr: 'Suivi OKR Agile — Outil interne' },
-    description: {
-      es: 'Herramienta web de seguimiento de OKRs construida para un equipo de producto de 30 personas. Integración con Jira via API para correlacionar entregas con resultados clave.',
-      en: 'OKR tracking web tool built for a 30-person product team. Jira API integration to correlate deliveries with key results.',
-      fr: 'Outil web de suivi des OKR construit pour une équipe produit de 30 personnes. Intégration Jira via API pour corréler les livraisons avec les résultats clés.',
+    emoji: '🤖',
+    title: {
+      es: 'Aplicación Web B2B con IA — Promesa Latina',
+      en: 'AI-Powered B2B Web App — Promesa Latina',
+      fr: 'Application Web B2B IA — Promesa Latina',
     },
-    stack: ['React', 'Node.js', 'PostgreSQL', 'REST API', 'Jira API', 'Docker'],
-    role: { es: 'Product Owner · Tech Lead', en: 'Product Owner · Tech Lead', fr: 'Product Owner · Tech Lead' },
-    demoUrl: 'https://demo.ejemplo.com/okr-tracker',
-    codeUrl: 'https://github.com/tuusuario/okr-tracker',
-  },
-  {
-    emoji: '🔮',
-    title: { es: 'Forecasting de Demanda con ML', en: 'Demand Forecasting with ML', fr: 'Prévision de Demande avec ML' },
     description: {
-      es: 'Modelo de series temporales (Prophet + LSTM) para pronosticar demanda semanal de 5.000 SKUs en una cadena de distribución. MAPE < 8% en producción.',
-      en: 'Time series model (Prophet + LSTM) to forecast weekly demand for 5,000 SKUs in a distribution chain. MAPE < 8% in production.',
-      fr: 'Modèle de séries temporelles (Prophet + LSTM) pour prévoir la demande hebdomadaire de 5 000 SKU dans une chaîne de distribution. MAPE < 8% en production.',
+      es: 'Lideré el análisis, diseño, desarrollo e implementación de una aplicación web B2B utilizando herramientas de inteligencia artificial. Automatización de procesos operativos clave y gestión ágil del ciclo de vida del producto.',
+      en: 'Led the analysis, design, development and implementation of a B2B web application using artificial intelligence tools. Automation of key operational processes and agile product lifecycle management.',
+      fr: 'Direction de l\'analyse, conception, développement et implémentation d\'une application web B2B utilisant des outils d\'IA. Automatisation des processus opérationnels clés et gestion agile du cycle de vie du produit.',
     },
-    stack: ['Python', 'Prophet', 'TensorFlow/Keras', 'Pandas', 'BigQuery', 'Streamlit'],
-    role: { es: 'ML Engineer · Data Analyst', en: 'ML Engineer · Data Analyst', fr: 'ML Engineer · Analyste Données' },
-    demoUrl: 'https://demo.ejemplo.com/demand-forecasting',
-    codeUrl: 'https://github.com/tuusuario/demand-forecasting',
-  },
-  {
-    emoji: '📱',
-    title: { es: 'App de Gestión de Retrospectivas', en: 'Retrospective Management App', fr: 'Application de Gestion des Rétrospectives' },
-    description: {
-      es: 'Aplicación web para facilitar retrospectivas remotas en equipos Scrum. Formatos: 4Ls, Start-Stop-Continue, Mad-Sad-Glad. Exporta action items a Jira automáticamente.',
-      en: 'Web app to facilitate remote retrospectives in Scrum teams. Formats: 4Ls, Start-Stop-Continue, Mad-Sad-Glad. Automatically exports action items to Jira.',
-      fr: 'Application web pour faciliter les rétrospectives à distance dans les équipes Scrum. Formats : 4L, Start-Stop-Continue, Mad-Sad-Glad. Exporte automatiquement les actions vers Jira.',
-    },
-    stack: ['Vue.js', 'Firebase', 'Jira API', 'Tailwind CSS', 'WebSockets'],
-    role: { es: 'Product Owner · Desarrolladora Full-Stack', en: 'Product Owner · Full-Stack Developer', fr: 'Product Owner · Développeuse Full-Stack' },
-    demoUrl: 'https://demo.ejemplo.com/retro-app',
-    codeUrl: 'https://github.com/tuusuario/retro-app',
+    stack: ['AI Tools', 'Automatización', 'Análisis de Negocio', 'Scrum', 'Product Management'],
+    role: { es: 'AI Business Analyst / AI Automation Analyst', en: 'AI Business Analyst / AI Automation Analyst', fr: 'Analyste Métier IA / Analyste Automatisation IA' },
+    demoUrl: null,
+    codeUrl: null,
   },
 ];
 
@@ -794,14 +975,14 @@ function renderProjects() {
           ${project.stack.map(tech => `<span>${tech}</span>`).join('')}
         </div>
         <div class="project-links">
-          <a href="${project.demoUrl}" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver demo de ${t(project.title)}">
+          ${project.demoUrl ? `<a href="${project.demoUrl}" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver demo de ${t(project.title)}">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             ${lang.proj_demo}
-          </a>
-          <a href="${project.codeUrl}" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver código de ${t(project.title)}">
+          </a>` : ''}
+          ${project.codeUrl ? `<a href="${project.codeUrl}" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver código de ${t(project.title)}">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
             ${lang.proj_code}
-          </a>
+          </a>` : ''}
         </div>
       </div>
     </article>
@@ -1039,20 +1220,29 @@ function revealFallback() {
 }
 
 /* ============================================================================
-   7. FORMULARIO DE CONTACTO (DEMOSTRACIÓN)
+   7. FORMULARIO DE CONTACTO — FORMSPREE (ENVÍO REAL)
+   ============================================================================
+   INSTRUCCIONES DE CONFIGURACIÓN (una sola vez):
+   1. Ve a https://formspree.io y crea una cuenta gratuita con eroxanacruz@gmail.com
+   2. Haz clic en "New Form" → dale un nombre (ej: "Portafolio Eve")
+   3. Copia el ID que aparece en la URL, tiene este formato: xyzabcde
+   4. Reemplaza FORMSPREE_ID en la línea de abajo con tu ID real
+   5. Formspree enviará cada mensaje directo a eroxanacruz@gmail.com ✅
    ============================================================================ */
 
+const FORMSPREE_ID = 'xjgdjkwk'; // PortafolioEve — eroxanacruz@gmail.com
+const FORMSPREE_URL = `https://formspree.io/f/${FORMSPREE_ID}`;
+
 /**
- * Valida y simula el envío del formulario.
- * NOTA: Este formulario NO envía datos. Para añadir funcionalidad real,
- * integra Formspree, EmailJS u otro servicio sin backend.
+ * Valida y envía el formulario a Formspree.
+ * Los mensajes llegan directamente a eroxanacruz@gmail.com.
  */
 function initContactForm() {
   const submitBtn = document.getElementById('form-submit');
   const feedback  = document.getElementById('form-feedback');
   if (!submitBtn || !feedback) return;
 
-  submitBtn.addEventListener('click', () => {
+  submitBtn.addEventListener('click', async () => {
     const nameEl    = document.getElementById('name');
     const emailEl   = document.getElementById('email');
     const messageEl = document.getElementById('message');
@@ -1064,32 +1254,53 @@ function initContactForm() {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const lang = TRANSLATIONS[currentLang];
 
+    // Resetear feedback
     feedback.className = '';
     feedback.style.display = 'none';
 
+    // Validación del lado del cliente
     if (!name || !emailRegex.test(email) || message.length < 10) {
-      feedback.textContent  = lang.form_error;
-      feedback.className    = 'error';
+      feedback.textContent   = lang.form_error;
+      feedback.className     = 'error';
       feedback.style.display = 'block';
       return;
     }
 
-    // Simular envío
-    submitBtn.disabled = true;
-    submitBtn.textContent = '...';
+    // Estado de carga
+    submitBtn.disabled    = true;
+    submitBtn.textContent = '⏳ Enviando...';
 
-    setTimeout(() => {
-      feedback.textContent   = lang.form_success;
-      feedback.className     = 'success';
+    try {
+      const response = await fetch(FORMSPREE_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({ name, email, message }),
+      });
+
+      if (response.ok) {
+        // ✅ Éxito real — mensaje enviado a eroxanacruz@gmail.com
+        feedback.textContent   = lang.form_success;
+        feedback.className     = 'success';
+        feedback.style.display = 'block';
+
+        // Limpiar campos
+        if (nameEl)    nameEl.value    = '';
+        if (emailEl)   emailEl.value   = '';
+        if (messageEl) messageEl.value = '';
+      } else {
+        // ⚠️ Error de Formspree (quota, ID incorrecto, etc.)
+        const data = await response.json();
+        throw new Error(data?.error || 'Error al enviar');
+      }
+    } catch (err) {
+      feedback.textContent   = '⚠ No se pudo enviar el mensaje. Por favor escríbeme directamente a eroxanacruz@gmail.com';
+      feedback.className     = 'error';
       feedback.style.display = 'block';
-      submitBtn.disabled     = false;
-      submitBtn.textContent  = lang.form_submit;
-
-      // Limpiar campos
-      if (nameEl)    nameEl.value    = '';
-      if (emailEl)   emailEl.value   = '';
-      if (messageEl) messageEl.value = '';
-    }, 900);
+      console.error('Formspree error:', err);
+    } finally {
+      submitBtn.disabled    = false;
+      submitBtn.textContent = lang.form_submit;
+    }
   });
 }
 
