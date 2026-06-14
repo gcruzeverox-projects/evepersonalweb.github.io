@@ -1115,8 +1115,16 @@ h1, h2, h3, h4 {
   font-size: var(--text-sm);
   font-weight: 600;
   color: var(--color-text);
+  overflow: hidden;          /* evita que el contenido se desborde */
   transition: border-color var(--duration-fast), box-shadow var(--duration-fast),
               transform var(--duration-fast), color var(--duration-fast);
+}
+
+.contact-link span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
 }
 
 .contact-link:hover { border-color: var(--color-navy); box-shadow: var(--shadow-md); transform: translateX(5px); color: var(--color-navy); }
