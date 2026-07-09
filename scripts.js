@@ -127,7 +127,7 @@ const TRANSLATIONS = {
     form_error:           '⚠ Por favor completa todos los campos correctamente.',
     contact_info_heading: 'Encuéntrame en',
     availability_title:   'Disponible para proyectos',
-    availability_desc:    'Abierta a roles full-time, freelance y consultoría en remoto o híbrido.',
+    availability_desc:    'Abierta a roles full-time, freelance y consultoría en remoto.',
 
     /* Footer */
     footer_rights: 'Todos los derechos reservados.',
@@ -211,7 +211,7 @@ const TRANSLATIONS = {
     form_error:           '⚠ Please complete all fields correctly.',
     contact_info_heading: 'Find me on',
     availability_title:   'Available for projects',
-    availability_desc:    'Open to full-time, freelance and consulting roles, remote or hybrid.',
+    availability_desc:    'Open to full-time, freelance and consulting roles, fully remote.',
 
     footer_rights: 'All rights reserved.',
     footer_built:  'Built with pure HTML, CSS and JavaScript · Deployed on GitHub Pages',
@@ -294,7 +294,7 @@ const TRANSLATIONS = {
     form_error:           '⚠ Veuillez remplir correctement tous les champs.',
     contact_info_heading: 'Retrouvez-moi sur',
     availability_title:   'Disponible pour des projets',
-    availability_desc:    'Ouverte aux postes temps plein, freelance et conseil, télétravail ou hybride.',
+    availability_desc:    'Ouverte aux postes temps plein, freelance et conseil, entièrement en télétravail.',
 
     footer_rights: 'Tous droits réservés.',
     footer_built:  'Construit en HTML, CSS et JavaScript pur · Déployé sur GitHub Pages',
@@ -471,9 +471,9 @@ const EXPERIENCE = [
     },
     company: 'Secretaría de Innovación',
     location: {
-      es: 'El Salvador',
-      en: 'El Salvador',
-      fr: 'El Salvador',
+      es: 'El Salvador (Híbrido)',
+      en: 'El Salvador (Hybrid)',
+      fr: 'El Salvador (Hybride)',
     },
     period: {
       es: 'Ago 2020 – Oct 2022',
@@ -533,9 +533,9 @@ const EXPERIENCE = [
     },
     company: 'Universidad Dr. José Matías Delgado (UJMD)',
     location: {
-      es: 'El Salvador',
-      en: 'El Salvador',
-      fr: 'El Salvador',
+      es: 'El Salvador (Híbrido)',
+      en: 'El Salvador (Hybrid)',
+      fr: 'El Salvador (Hybride)',
     },
     period: {
       es: 'Jul 2019 – Jul 2020',
@@ -592,9 +592,9 @@ const EXPERIENCE = [
     },
     company: 'Avianca',
     location: {
-      es: 'El Salvador',
-      en: 'El Salvador',
-      fr: 'El Salvador',
+      es: 'El Salvador (Presencial)',
+      en: 'El Salvador (On-site)',
+      fr: 'El Salvador (Présentiel)',
     },
     period: {
       es: 'Abr 2015 – Ene 2018',
