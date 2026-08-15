@@ -438,7 +438,7 @@ h1, h2, h3, h4 {
   position: fixed;
   inset: var(--nav-height) 0 0 0;
   background: var(--color-surface);
-  z-index: 999;
+  z-index: 1100;
   display: flex;
   flex-direction: column;
   padding: var(--space-lg);
@@ -646,6 +646,7 @@ h1, h2, h3, h4 {
   position: relative;
   flex-shrink: 0;
   width: clamp(210px, 26vw, 360px);
+  z-index: 0;
 }
 
 /* Marco decorativo en lila */
@@ -1115,16 +1116,8 @@ h1, h2, h3, h4 {
   font-size: var(--text-sm);
   font-weight: 600;
   color: var(--color-text);
-  overflow: hidden;          /* evita que el contenido se desborde */
   transition: border-color var(--duration-fast), box-shadow var(--duration-fast),
               transform var(--duration-fast), color var(--duration-fast);
-}
-
-.contact-link span:last-child {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  min-width: 0;
 }
 
 .contact-link:hover { border-color: var(--color-navy); box-shadow: var(--shadow-md); transform: translateX(5px); color: var(--color-navy); }
@@ -1231,7 +1224,8 @@ h1, h2, h3, h4 {
   .btn-cv { padding: .5em .7em; }
   .btn-cv svg { width: 18px; height: 18px; }
   .hero-content { grid-template-columns: 1fr; text-align: left; }
-  .hero-image-wrap { order: -1; width: clamp(150px, 48vw, 210px); margin-inline: auto; }
+  .hero-image-wrap { order: 1; width: clamp(140px, 42vw, 200px); margin-inline: auto; z-index: 0; }
+  .hero-text { order: 0; }
   .hero-ctas { justify-content: flex-start; }
   .hero-stats { gap: 1.25rem; }
   .about-aside { grid-template-columns: 1fr; }
