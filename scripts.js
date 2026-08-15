@@ -228,7 +228,7 @@ const TRANSLATIONS = {
     nav_cv:         'Télécharger CV',
 
     hero_available:     'Disponible pour de nouvelles opportunités',
-    hero_title:         'Analyste de Données · Product Owner · Scrum Master',
+    hero_title:         'Analyste Métier IA / Analyste Automatisation IA · Data Analyst · Product Owner · Scrum Master',
     hero_pitch:         'Je transforme les données en décisions stratégiques et dirige des équipes Agile pour construire des produits digitaux à fort impact métier.',
     hero_cta_projects:  'Voir les projets',
     hero_cta_contact:   'Discutons',
@@ -374,19 +374,16 @@ const EXPERIENCE = [
     },
     achievements: {
       es: [
-        'Implementación exitosa de una solución B2B alineada a los objetivos del negocio',
-        'Reducción de tiempos operativos mediante la automatización de procesos clave',
-        'Entrega del producto en tiempos definidos cumpliendo estándares de calidad, generando valor mediante el uso estratégico de IA',
+        'Desarrollo integral de solución B2B alineada a los objetivos del negocio, actualmente en fase de ajustes previos al lanzamiento a producción',
+        'Reducción de tiempos operativos mediante la automatización de procesos clave con IA generativa',
       ],
       en: [
-        'Successful implementation of a B2B solution aligned with business objectives',
-        'Reduction of operational time through automation of key processes',
-        'Product delivery within defined timelines meeting quality standards, generating value through strategic use of AI',
+        'End-to-end development of a B2B solution aligned with business objectives, currently in pre-launch refinement phase',
+        'Reduction of operational time through automation of key processes with generative AI',
       ],
       fr: [
-        'Implémentation réussie d\'une solution B2B alignée sur les objectifs métier',
-        'Réduction des délais opérationnels grâce à l\'automatisation des processus clés',
-        'Livraison du produit dans les délais définis selon les normes de qualité, créant de la valeur par l\'utilisation stratégique de l\'IA',
+        'Développement intégral d\'une solution B2B alignée sur les objectifs métier, actuellement en phase d\'ajustements avant le lancement en production',
+        'Réduction des délais opérationnels grâce à l\'automatisation des processus clés avec l\'IA générative',
       ],
     },
   },
@@ -671,6 +668,12 @@ const EDUCATION = [
  * INSTRUCCIONES: Cada objeto representa una certificación o curso relevante.
  */
 const CERTIFICATIONS = [
+  { icon: '🏅', name: 'Claude 101', institution: 'Anthropic', year: '2026' },
+  { icon: '🏅', name: 'AI Fluency: Framework & Foundations', institution: 'Anthropic', year: '2026' },
+  { icon: '🏅', name: 'Data Analyst', institution: 'Kodree', year: '2026' },
+  { icon: '🏅', name: 'Python for Data Analytics', institution: 'Kodree', year: '2026' },
+  { icon: '🏅', name: 'Tableau Basics', institution: 'Kodree', year: '2026' },
+  { icon: '🏅', name: 'SQL Basics', institution: 'Kodree', year: '2026' },
   { icon: '🏅', name: 'Cloud Digital Leader Certification', institution: 'Google', year: '2024' },
   { icon: '🏅', name: 'Científica de Datos — Bootcamp Data Science', institution: 'Intech MOM Latam', year: '2024' },
   { icon: '🏅', name: 'Preparación para Certificación PMP (35 hrs)', institution: 'Certificacionpm', year: '2021' },
@@ -696,7 +699,6 @@ const SKILLS = [
       { name: 'Prompt Engineering & AI Tools (ChatGPT, Claude, Copilot)', level: 90 },
       { name: 'Automatización de procesos con IA', level: 85 },
       { name: 'Análisis de requerimientos asistido por IA', level: 88 },
-      { name: 'Power Automate / n8n / Make', level: 70 },
     ],
   },
   {
@@ -714,13 +716,13 @@ const SKILLS = [
     catIcon: '🔄',
     category: { es: 'Metodologías Ágiles', en: 'Agile Methodologies', fr: 'Méthodologies Agiles' },
     type: 'tags',
-    tags: ['Scrum', 'Kanban', 'SAFe', 'OKRs', 'User Story Mapping', 'Design Thinking', 'Lean', 'Sprint Planning', 'Backlog Refinement'],
+    tags: ['Scrum', 'Kanban', 'User Story Mapping', 'Sprint Planning', 'Backlog Refinement'],
   },
   {
     catIcon: '🛠️',
     category: { es: 'Herramientas & Gestión', en: 'Tools & Management', fr: 'Outils & Gestion' },
     type: 'tags',
-    tags: ['Jira', 'Confluence', 'Open Project', 'Notion', 'Miro', 'Figma', 'Slack', 'Google Drive', 'GitHub', 'Microsoft Office'],
+    tags: ['Jira', 'Open Project', 'Trello', 'Notion', 'Miro', 'Slack', 'Google Drive', 'GitHub', 'Microsoft Office'],
   },
   {
     catIcon: '🌍',
@@ -728,7 +730,7 @@ const SKILLS = [
     type: 'bars',
     items: [
       { name: 'Español', level: 100 },
-      { name: 'Inglés', level: 75 },
+      { name: 'Inglés (Intermedio-Alto)', level: 82 },
       { name: 'Francés', level: 50 },
     ],
   },
@@ -801,13 +803,13 @@ const PROJECTS = [
       fr: 'Application Web B2B IA — Promesa Latina',
     },
     description: {
-      es: 'Lideré el análisis, diseño, desarrollo e implementación de una aplicación web B2B utilizando herramientas de inteligencia artificial. Automatización de procesos operativos clave y gestión ágil del ciclo de vida del producto.',
-      en: 'Led the analysis, design, development and implementation of a B2B web application using artificial intelligence tools. Automation of key operational processes and agile product lifecycle management.',
-      fr: 'Direction de l\'analyse, conception, développement et implémentation d\'une application web B2B utilisant des outils d\'IA. Automatisation des processus opérationnels clés et gestion agile du cycle de vie du produit.',
+      es: 'Lidero el desarrollo integral de una plataforma B2B para distribución de productos latinoamericanos en EE.UU. (587 productos, cotizaciones, panel admin) utilizando herramientas de IA. Proyecto en fase de ajustes previos al lanzamiento a producción.',
+      en: 'Leading end-to-end development of a B2B platform for distributing Latin American products in the USA (587 products, quotes, admin panel) using AI tools. Project currently in pre-launch refinement phase.',
+      fr: 'Direction du développement intégral d\'une plateforme B2B pour la distribution de produits latino-américains aux États-Unis (587 produits, devis, panel admin) avec des outils IA. Projet en phase d\'ajustements avant le lancement.',
     },
-    stack: ['AI Tools', 'Automatización', 'Análisis de Negocio', 'Scrum', 'Product Management'],
-    role: { es: 'AI Business Analyst / AI Automation Analyst', en: 'AI Business Analyst / AI Automation Analyst', fr: 'Analyste Métier IA / Analyste Automatisation IA' },
-    demoUrl: null,
+    stack: ['AI Tools', 'Automatización', 'Git · Vercel · Railway', 'Análisis de Negocio', 'Product Management'],
+    role: { es: 'AI Business Analyst', en: 'AI Business Analyst', fr: 'Analyste Métier IA' },
+    demoUrl: 'https://promesalatina-github-io.vercel.app/es',
     codeUrl: null,
   },
 ];
