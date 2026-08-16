@@ -1225,8 +1225,7 @@ h1, h2, h3, h4 {
   .btn-cv svg { width: 18px; height: 18px; }
   .hero-content { grid-template-columns: 1fr; text-align: left; }
   .hero-text { order: 0; }
-  .hero-image-wrap { order: 1; width: clamp(160px, 55vw, 220px); margin-inline: auto; z-index: 0; display: block; margin-top: 1.5rem; margin-bottom: 0.5rem; }
-  .hero-stats { order: 2; }
+  .hero-image-wrap { order: 1; width: clamp(160px, 55vw, 220px); margin: 1.5rem auto 0; z-index: 0; display: block; }
   .hero-ctas { justify-content: flex-start; }
   .hero-stats { gap: 1.25rem; }
   .about-aside { grid-template-columns: 1fr; }
