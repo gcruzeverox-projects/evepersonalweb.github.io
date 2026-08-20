@@ -56,7 +56,7 @@ const TRANSLATIONS = {
     /* Hero */
     hero_available:     'Disponible para nuevos proyectos',
     hero_title:         'AI Business Analyst / AI Automation Analyst · Data Analyst · Product Owner · Scrum Master',
-    hero_pitch:         'Transformo datos en decisiones estratégicas y lidero equipos Agile para construir productos digitales que generan impacto real en el negocio.',
+    hero_pitch:         'Ingeniera de Sistemas con 13+ años transformando procesos complejos en soluciones claras — combinando análisis de datos, gestión ágil e IA para conectar equipos, clientes y tecnología.',
     hero_cta_projects:  'Ver proyectos',
     hero_cta_contact:   'Hablemos',
     stat_years:         'años de experiencia',
@@ -146,7 +146,7 @@ const TRANSLATIONS = {
 
     hero_available:     'Open to new opportunities',
     hero_title:         'AI Business Analyst / AI Automation Analyst · Data Analyst · Product Owner · Scrum Master',
-    hero_pitch:         'I transform data into strategic decisions and lead Agile teams to build digital products that create real business impact.',
+    hero_pitch:         'Systems Engineer with 13+ years turning complex processes into clear solutions — combining data analysis, agile management and AI to connect teams, clients and technology.',
     hero_cta_projects:  'View projects',
     hero_cta_contact:   "Let's talk",
     stat_years:         'years of experience',
@@ -229,7 +229,7 @@ const TRANSLATIONS = {
 
     hero_available:     'Disponible pour de nouvelles opportunités',
     hero_title:         'Analyste Métier IA / Analyste Automatisation IA · Data Analyst · Product Owner · Scrum Master',
-    hero_pitch:         'Je transforme les données en décisions stratégiques et dirige des équipes Agile pour construire des produits digitaux à fort impact métier.',
+    hero_pitch:         'Ingénieure Systèmes avec 13+ ans à transformer des processus complexes en solutions claires — combinant analyse de données, gestion agile et IA pour connecter équipes, clients et technologie.',
     hero_cta_projects:  'Voir les projets',
     hero_cta_contact:   'Discutons',
     stat_years:         "années d'expérience",
