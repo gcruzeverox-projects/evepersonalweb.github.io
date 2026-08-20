@@ -345,22 +345,22 @@ const EXPERIENCE = [
     },
     responsibilities: {
       es: [
-        'Levantamiento y análisis de requerimientos con stakeholders',
-        'Traducción de necesidades de negocio en soluciones tecnológicas escalables',
-        'Diseño funcional y definición de arquitectura de la solución',
-        'Desarrollo de la aplicación utilizando herramientas y capacidades de inteligencia artificial',
-        'Automatización de procesos clave para optimizar la operación',
-        'Validación de funcionalidades y aseguramiento de la calidad del producto',
-        'Gestión del ciclo de vida del producto desde la concepción hasta producción',
+        'Levanto y analizo requerimientos funcionales con stakeholders.',
+        'Traduzco necesidades de negocio en soluciones tecnológicas escalables.',
+        'Diseño la arquitectura funcional y defino el alcance de la solución.',
+        'Desarrollo la aplicación utilizando herramientas de inteligencia artificial.',
+        'Automatizo procesos clave para optimizar la operación del negocio.',
+        'Valido funcionalidades y aseguro la calidad del producto.',
+        'Gestiono el ciclo de vida del producto desde la concepción hasta producción.',
       ],
       en: [
-        'Requirements gathering and analysis with stakeholders',
-        'Translating business needs into scalable technology solutions',
-        'Functional design and solution architecture definition',
-        'Application development using artificial intelligence tools and capabilities',
-        'Automation of key processes to optimize operations',
-        'Feature validation and product quality assurance',
-        'Product lifecycle management from conception to production',
+        'I gather and analyze functional requirements with stakeholders.',
+        'I translate business needs into scalable technology solutions.',
+        'I design functional architecture and define the scope of the solution.',
+        'I develop the application using artificial intelligence tools.',
+        'I automate key processes to optimize business operations.',
+        'I validate features and ensure product quality.',
+        'I manage the product lifecycle from conception to production.',
       ],
       fr: [
         'Recueil et analyse des exigences avec les parties prenantes',
@@ -413,22 +413,22 @@ const EXPERIENCE = [
     },
     responsibilities: {
       es: [
-        'Planificación y organización del Roadmap y plan de trabajo del producto',
-        'Gestión de stakeholders y comunicación con áreas de negocio',
-        'Definición de requisitos y alcance del MVP',
-        'Priorización y refinamiento del backlog',
-        'Facilitación de ceremonias Scrum (Planning, Daily, Review, Retrospective)',
-        'Eliminación proactiva de bloqueos del equipo',
-        'Seguimiento de métricas de entrega y calidad',
+        'Planifiqué y organicé el Roadmap y plan de trabajo del producto.',
+        'Gestioné stakeholders y mantuve comunicación con áreas de negocio.',
+        'Definí requisitos y alcance del MVP con el cliente.',
+        'Prioricé y refiné el backlog según objetivos estratégicos.',
+        'Facilité ceremonias Scrum (Planning, Daily, Review, Retrospective).',
+        'Eliminé proactivamente bloqueos del equipo.',
+        'Di seguimiento a métricas de entrega y calidad.',
       ],
       en: [
-        'Planning and organizing the product Roadmap and work plan',
-        'Stakeholder management and communication with business areas',
-        'Requirements definition and MVP scope',
-        'Backlog prioritization and refinement',
-        'Facilitation of Scrum ceremonies (Planning, Daily, Review, Retrospective)',
-        'Proactive removal of team blockers',
-        'Tracking delivery and quality metrics',
+        'Planned and organized the product Roadmap and work plan.',
+        'Managed stakeholders and maintained communication with business areas.',
+        'Defined requirements and MVP scope with the client.',
+        'Prioritized and refined the backlog according to strategic objectives.',
+        'Facilitated Scrum ceremonies (Planning, Daily, Review, Retrospective).',
+        'Proactively removed team blockers.',
+        'Tracked delivery and quality metrics.',
       ],
       fr: [
         'Planification et organisation de la Roadmap produit et du plan de travail',
@@ -484,16 +484,16 @@ const EXPERIENCE = [
     },
     responsibilities: {
       es: [
-        'Gestión de programas y proyectos tecnológicos institucionales',
-        'Planificación, seguimiento y control de proyectos de innovación digital',
-        'Coordinación con equipos internos y proveedores externos',
-        'Reporte de avance a dirección y stakeholders gubernamentales',
+        'Gestioné programas y proyectos tecnológicos institucionales.',
+        'Planifiqué, di seguimiento y controlé proyectos de innovación digital.',
+        'Coordiné con equipos internos y proveedores externos.',
+        'Reporté avances a dirección y stakeholders gubernamentales.',
       ],
       en: [
-        'Management of institutional technology programs and projects',
-        'Planning, monitoring and control of digital innovation projects',
-        'Coordination with internal teams and external vendors',
-        'Progress reporting to management and government stakeholders',
+        'Managed institutional technology programs and projects.',
+        'Planned, monitored and controlled digital innovation projects.',
+        'Coordinated with internal teams and external vendors.',
+        'Reported progress to management and government stakeholders.',
       ],
       fr: [
         'Gestion des programmes et projets technologiques institutionnels',
@@ -546,19 +546,19 @@ const EXPERIENCE = [
     },
     responsibilities: {
       es: [
-        'Supervisión y coordinación de laboratorios de cómputo universitarios',
-        'Implementación del marco de trabajo Scrum en el área IT',
-        'Elaboración y administración del presupuesto de la Dirección de IT',
+        'Supervisé y coordiné laboratorios de cómputo universitarios.',
+        'Implementé el marco de trabajo Scrum en el área IT.',
+        'Elaboré y administré el presupuesto de la Dirección de IT.',
       ],
       en: [
-        'Supervision and coordination of university computer labs',
-        'Implementation of the Scrum framework in the IT area',
-        'Preparation and management of the IT Directorate budget',
+        'Supervised and coordinated university computer labs.',
+        'Implemented the Scrum framework in the IT area.',
+        'Prepared and managed the IT Directorate budget.',
       ],
       fr: [
-        'Supervision et coordination des laboratoires informatiques universitaires',
-        'Mise en œuvre du cadre Scrum au sein du département IT',
-        'Élaboration et gestion du budget de la Direction IT',
+        'Supervisai et coordinai les laboratoires informatiques universitaires.',
+        'Mis en œuvre le cadre Scrum au sein du département IT.',
+        'Élaborai et gérai le budget de la Direction IT.',
       ],
     },
     achievements: {
@@ -580,7 +580,62 @@ const EXPERIENCE = [
     },
   },
 
-  /* ─── 5. AVIANCA ────────────────────────────────────────────────────────── */
+  /* ─── 5. BANCO AGRÍCOLA ─────────────────────────────────────────────────── */
+  {
+    role: { es: 'Scrum Master', en: 'Scrum Master', fr: 'Scrum Master' },
+    company: 'Banco Agrícola',
+    location: {
+      es: 'El Salvador (Presencial)',
+      en: 'El Salvador (On-site)',
+      fr: 'El Salvador (Présentiel)',
+    },
+    period: {
+      es: 'Feb 2018 – Jul 2018',
+      en: 'Feb 2018 – Jul 2018',
+      fr: 'Fév 2018 – Juil 2018',
+    },
+    description: {
+      es: 'Asumí como Scrum Master en un proyecto con 2 años de retraso, logrando un avance del 95% en 4 meses mediante la adopción de Scrum y la reorganización de células de trabajo.',
+      en: 'Took on the Scrum Master role in a project with 2 years of delay, achieving 95% progress in 4 months through Scrum adoption and work cell reorganization.',
+      fr: 'J\'ai pris en charge le rôle de Scrum Master dans un projet accusant 2 ans de retard, atteignant 95% d\'avancement en 4 mois grâce à l\'adoption de Scrum.',
+    },
+    responsibilities: {
+      es: [
+        'Facilité ceremonias Scrum (Planning, Daily, Review, Retrospective).',
+        'Transmití valores ágiles al equipo de desarrollo.',
+        'Desbloqueé impedimentos críticos que paralizaban el proyecto.',
+      ],
+      en: [
+        'Facilitated Scrum ceremonies (Planning, Daily, Review, Retrospective).',
+        'Transmitted agile values to the development team.',
+        'Removed critical blockers that were paralyzing the project.',
+      ],
+      fr: [
+        'Facilitai les cérémonies Scrum (Planning, Daily, Review, Rétrospective).',
+        'Transmis les valeurs agiles à l\'équipe de développement.',
+        'Supprimai les obstacles critiques qui paralysaient le projet.',
+      ],
+    },
+    achievements: {
+      es: [
+        'Avance del 95% en un proyecto con 2 años de retraso, logrado en solo 4 meses.',
+        'Adopción de Scrum al 90% en células de trabajo del equipo.',
+        'Desbloqueé impedimentos que habían paralizado el proyecto durante meses.',
+      ],
+      en: [
+        '95% progress on a 2-year delayed project, achieved in just 4 months.',
+        '90% Scrum adoption across team work cells.',
+        'Unblocked impediments that had paralyzed the project for months.',
+      ],
+      fr: [
+        '95% d\'avancement sur un projet en retard de 2 ans, atteint en seulement 4 mois.',
+        '90% d\'adoption de Scrum dans les cellules de travail de l\'équipe.',
+        'Déblocage des obstacles qui avaient paralysé le projet pendant des mois.',
+      ],
+    },
+  },
+
+  /* ─── 6. AVIANCA ────────────────────────────────────────────────────────── */
   {
     role: {
       es: 'Product Owner / Scrum Master',
@@ -605,18 +660,18 @@ const EXPERIENCE = [
     },
     responsibilities: {
       es: [
-        'Análisis de procesos funcionales y reglas de negocio',
-        'Elaboración de Historias de Usuario y criterios de aceptación',
-        'Facilitación de ceremonias Scrum',
-        'Planeación, organización y ejecución de Sprints',
-        'Desbloqueo de impedimentos del equipo',
+        'Analicé procesos funcionales y reglas de negocio del área de Operaciones.',
+        'Elaboré Historias de Usuario y criterios de aceptación.',
+        'Facilité ceremonias Scrum y coordiné equipos en México y El Salvador.',
+        'Planifiqué, organicé y ejecuté Sprints en entorno multicultural.',
+        'Desbloqueé impedimentos del equipo durante la ejecución del proyecto.',
       ],
       en: [
-        'Analysis of functional processes and business rules',
-        'Writing User Stories and acceptance criteria',
-        'Facilitation of Scrum ceremonies',
-        'Sprint planning, organization and execution',
-        'Team impediment removal',
+        'Analyzed functional processes and business rules for the Operations area.',
+        'Wrote User Stories and acceptance criteria.',
+        'Facilitated Scrum ceremonies and coordinated teams in Mexico and El Salvador.',
+        'Planned, organized and executed Sprints in a multicultural environment.',
+        'Removed team impediments throughout project execution.',
       ],
       fr: [
         'Analyse des processus fonctionnels et des règles métier',
