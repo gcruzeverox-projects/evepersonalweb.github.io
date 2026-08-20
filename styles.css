@@ -1073,7 +1073,7 @@ h1, h2, h3, h4 {
   margin-bottom: 1.5rem;
 }
 
-.contact-form { display: flex; flex-direction: column; gap: 1.25rem; }
+.contact-form { max-width: 100%; overflow: hidden; display: flex; flex-direction: column; gap: 1.25rem; }
 
 .form-group { display: flex; flex-direction: column; gap: .35rem; }
 .form-group label { font-size: var(--text-sm); font-weight: 600; color: var(--color-text); }
@@ -1110,6 +1110,8 @@ h1, h2, h3, h4 {
 .contact-links { display: flex; flex-direction: column; gap: .9rem; margin-bottom: 2rem; }
 
 .contact-link {
+  overflow: hidden;
+  max-width: 100%;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -1124,6 +1126,7 @@ h1, h2, h3, h4 {
               transform var(--duration-fast), color var(--duration-fast);
 }
 
+.contact-link span:last-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
 .contact-link:hover { border-color: var(--color-navy); box-shadow: var(--shadow-md); transform: translateX(5px); color: var(--color-navy); }
 
 .contact-icon {
