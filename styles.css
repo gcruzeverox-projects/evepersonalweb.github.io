@@ -1234,7 +1234,7 @@ h1, h2, h3, h4 {
   .hero-text { order: 0; }
   .hero-image-wrap { order: 1; width: clamp(160px, 55vw, 220px); margin: 1.5rem auto 0; z-index: 0; display: block; }
   .hero-ctas { justify-content: flex-start; }
-  .hero-stats { gap: 1.25rem; }
+  .hero-stats { gap: 0.75rem; flex-wrap: nowrap; align-items: flex-start; }
   .about-aside { grid-template-columns: 1fr; }
   .timeline { padding-left: 1.5rem; }
   .timeline-lists { grid-template-columns: 1fr; gap: 1rem; }
@@ -1243,8 +1243,10 @@ h1, h2, h3, h4 {
 
 @media (max-width: 480px) {
   .hero-name { font-size: clamp(2.75rem, 13vw, 4rem); }
+  .stat-num { font-size: clamp(1.5rem, 7vw, 2rem); }
+  .stat-label { font-size: clamp(0.6rem, 2.5vw, 0.75rem); }
   .lang-switcher { display: none; }
-  .hero-stats { flex-wrap: wrap; gap: .75rem; }
+  .hero-stats { flex-wrap: nowrap; gap: .5rem; font-size: 0.85em; }
   .stat-divider { display: none; }
 }
 
