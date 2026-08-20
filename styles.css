@@ -120,6 +120,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   font-family: var(--font-body);
   background-color: var(--color-bg);
   color: var(--color-text);
@@ -293,6 +294,7 @@ h1, h2, h3, h4 {
 
 /* ─── 5. NAVEGACIÓN ───────────────────────────────────────────────────── */
 .site-header {
+  overflow: hidden;
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
