@@ -113,6 +113,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   font-size: 16px;
@@ -124,7 +125,7 @@ body {
   color: var(--color-text);
   line-height: 1.65;  /* Plus Jakarta Sans: métricas más ajustadas, 1.65 óptimo */
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
+
 }
 
 img, svg { display: block; max-width: 100%; }
@@ -318,6 +319,7 @@ h1, h2, h3, h4 {
   margin-inline: auto;
   padding-inline: clamp(1.25rem, 5vw, 2.5rem);
   height: var(--nav-height);
+  width: 100%;
 }
 
 .nav-logo {
