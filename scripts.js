@@ -67,8 +67,8 @@ const TRANSLATIONS = {
     /* Sobre mí */
     about_tag:           'Sobre mí',
     about_heading:       'Quien está detrás de los datos',
-    about_p1:            'Soy Ingeniera en Sistemas Informáticos con más de 13 años de experiencia en IT. He evolucionado desde soporte técnico hasta el análisis de negocio, la gestión de productos como Product Owner y la facilitación de equipos como Scrum Master, participando en diversas industrias.',
-    about_p2:            'Actualmente, me enfoco en el uso de datos y la inteligencia artificial para crear productos digitales, potenciar el análisis y materializar ideas en soluciones reales. Creo en el valor de los datos bien interpretados, el aprendizaje continuo y el trabajo colaborativo como motores del progreso.',
+    about_p1:            'Con más de 13 años de experiencia en IT, he trabajado en 7 industrias distintas — aviación internacional, banca, gobierno, educación, salud, tecnología y sector social. En cada proyecto, mi rol ha sido el mismo: escuchar profundamente, analizar con precisión y traducir necesidades complejas en soluciones que los equipos pueden ejecutar y los clientes pueden usar.',
+    about_p2:            'Me certifiqué como Product Owner y Scrum Master en la práctica antes de tener el papel — liderando sprints, facilitando ceremonias ágiles y negociando requerimientos con stakeholders de todos los niveles. Hoy integro inteligencia artificial como herramienta estratégica para automatizar procesos y construir productos digitales que generan impacto real desde el primer mes.',
     
     about_story_heading: 'Mi historia',
     about_story_p1:      'Crecí en una familia que no le temía al trabajo y que aprovechaba cada oportunidad para salir adelante. Desde muy joven fui curiosa y encontré en el estudio una puerta hacia nuevas experiencias y la posibilidad de construir mi propio camino. Decidí estudiar Ingeniería en Sistemas Informáticos, una carrera cuya versatilidad me permitió comprender el valor de la información y descubrir que los datos cuentan historias. Al iniciar mi vida profesional, aprendí a comunicarme tanto en el lenguaje del negocio como en el técnico. Ese puente entre ambos mundos es lo que hoy define mi perfil.',
@@ -156,8 +156,8 @@ const TRANSLATIONS = {
 
     about_tag:           'About me',
     about_heading:       'The person behind the data',
-    about_p1:            'I am a Computer Systems Engineer with over 13 years of experience in IT. I have evolved from technical roles to business analysis, product management as a Product Owner, and team facilitation as a Scrum Master across diverse industries.',
-    about_p2:            'Currently, I focus on leveraging data and artificial intelligence to create digital products, enhance analysis and turn ideas into real solutions. I am also a certified Scrum Master and hold a Google Cloud Digital Leader certification.',
+    about_p1:            'With over 13 years of IT experience, I have worked across 7 different industries — international aviation, banking, government, education, healthcare, technology and the social sector. In every project, my role has been the same: listen deeply, analyze precisely, and translate complex needs into solutions that teams can execute and clients can use.',
+    about_p2:            'I became certified as a Product Owner and Scrum Master through practice before earning the titles — leading sprints, facilitating agile ceremonies and negotiating requirements with stakeholders at every level. Today I integrate artificial intelligence as a strategic tool to automate processes and build digital products that generate real impact from day one.',
     about_p3:            'My role as a Scrum Master has taught me that technical excellence without human collaboration is incomplete. I facilitate ceremonies, remove impediments, and build high-performing teams with shared purpose.',
     about_story_heading: 'My story',
     about_story_p1:      'I grew up surrounded by systems, curiosity, and the conviction that numbers tell stories. I started my career in consulting, where I learned to speak both the language of business and the language of code. That bridge between two worlds defines my unique profile.',
@@ -239,8 +239,8 @@ const TRANSLATIONS = {
 
     about_tag:           'À propos',
     about_heading:       'La personne derrière les données',
-    about_p1:            "Je suis Ingénieure en Systèmes Informatiques avec plus de 13 ans d'expérience en IT. J'ai évolué de rôles techniques vers l'analyse métier, la gestion de produits en tant que Product Owner et la facilitation d'équipes en tant que Scrum Master.",
-    about_p2:            "Actuellement, je me concentre sur l'utilisation des données et de l'intelligence artificielle pour créer des produits numériques et concrétiser des idées en solutions réelles. Je suis également certifiée Scrum Master et Google Cloud Digital Leader.",
+    about_p1:            "Avec plus de 13 ans d'expérience en IT, j'ai travaillé dans 7 secteurs différents — aviation internationale, banque, gouvernement, éducation, santé, technologie et secteur social. Dans chaque projet, mon rôle a été le même : écouter profondément, analyser avec précision et traduire des besoins complexes en solutions exécutables.",
+    about_p2:            "Je me suis certifiée Product Owner et Scrum Master par la pratique avant d'obtenir les titres — dirigeant des sprints, facilitant des cérémonies agiles et négociant les exigences avec des parties prenantes à tous les niveaux. Aujourd'hui j'intègre l'intelligence artificielle comme outil stratégique pour automatiser les processus et créer des produits numériques à fort impact.",
     about_p3:            "Mon rôle de Scrum Master m'a appris que l'excellence technique sans collaboration humaine est incomplète. Je facilite les cérémonies, lève les obstacles et construis des équipes performantes avec un objectif commun.",
     about_story_heading: 'Mon histoire',
     about_story_p1:      "J'ai grandi entre les systèmes, la curiosité et la conviction que les chiffres racontent des histoires. J'ai commencé ma carrière en conseil, où j'ai appris à parler à la fois le langage des affaires et celui du code.",
