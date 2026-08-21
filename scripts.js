@@ -374,8 +374,8 @@ const EXPERIENCE = [
     },
     achievements: {
       es: [
-        'Desarrollo integral de solución B2B alineada a los objetivos del negocio, actualmente en fase de ajustes previos al lanzamiento a producción',
-        'Reducción de tiempos operativos mediante la automatización de procesos clave con IA generativa',
+        'Desarrollé una solución B2B integral alineada a los objetivos del negocio, actualmente en fase de ajustes previos al lanzamiento a producción.',
+        'Reduje tiempos operativos mediante la automatización de procesos clave con IA generativa.',
       ],
       en: [
         'End-to-end development of a B2B solution aligned with business objectives, currently in pre-launch refinement phase',
@@ -442,14 +442,14 @@ const EXPERIENCE = [
     },
     achievements: {
       es: [
-        'Lideré proyectos web de alto impacto: elsalvadorpei.migracion.gob.sv y pasaporteenlinea.migracion.gob.sv',
-        'Desarrollo y capacitación en tableros de información migratoria para la Dirección General de Migración y Extranjería',
-        'Gestión exitosa de múltiples productos simultáneos manteniendo alineación con objetivos estratégicos',
+        'Lideré proyectos web de alto impacto gubernamental: Portal PEI y Pasaporte en Línea para la Dirección General de Migración.',
+        'Desarrollé y capacité en tableros de información migratoria para la Dirección General de Migración y Extranjería.',
+        'Gestioné exitosamente múltiples productos simultáneos manteniendo alineación con los objetivos estratégicos.',
       ],
       en: [
-        'Led high-impact web projects: elsalvadorpei.migracion.gob.sv and pasaporteenlinea.migracion.gob.sv',
-        'Developed and trained stakeholders on migration information dashboards for the General Directorate of Migration',
-        'Successful management of multiple simultaneous products maintaining alignment with strategic objectives',
+        'Lideré proyectos web de alto impacto gubernamental: Portal PEI y Pasaporte en Línea para la Dirección General de Migración.',
+        'Desarrollé y capacité a stakeholders en tableros de información migratoria para la Dirección General de Migración.',
+        'Managed multiple simultaneous products successfully, maintaining alignment with strategic objectives.',
       ],
       fr: [
         'Dirigé des projets web à fort impact : elsalvadorpei.migracion.gob.sv et pasaporteenlinea.migracion.gob.sv',
@@ -504,18 +504,18 @@ const EXPERIENCE = [
     },
     achievements: {
       es: [
-        'Gestión exitosa de proyectos de transformación digital de alto impacto institucional',
-        'Implementación de marcos de seguimiento que mejoraron la visibilidad y control de los proyectos',
-        'Coordinación efectiva entre áreas técnicas y decisores de nivel ejecutivo',
+        'Gestioné proyectos de transformación digital de alto impacto institucional.',
+        'Implementé marcos de seguimiento que mejoraron la visibilidad y control de 136 proyectos simultáneos.',
+        'Coordiné efectivamente entre áreas técnicas y decisores de nivel ejecutivo en entorno gubernamental.',
       ],
       en: [
-        'Successful management of high-impact institutional digital transformation projects',
-        'Implementation of monitoring frameworks that improved project visibility and control',
+        'Managed high-impact institutional digital transformation projects successfully.',
+        'Implemented monitoring frameworks that improved visibility and control of 136 simultaneous projects.',
         'Effective coordination between technical areas and executive-level decision makers',
       ],
       fr: [
-        'Gestion réussie de projets de transformation numérique à fort impact institutionnel',
-        'Mise en œuvre de cadres de suivi ayant amélioré la visibilité et le contrôle des projets',
+        'Gérai avec succès des projets de transformation numérique à fort impact institutionnel.',
+        'Mis en œuvre des cadres de suivi ayant amélioré la visibilité et le contrôle de 136 projets simultanés.',
         'Coordination efficace entre les équipes techniques et les décideurs de niveau exécutif',
       ],
     },
@@ -563,19 +563,19 @@ const EXPERIENCE = [
     },
     achievements: {
       es: [
-        'Introducción exitosa de Scrum como metodología de trabajo en el área IT de la universidad',
-        'Optimización de la gestión operativa y presupuestaria de la Dirección de Tecnología',
-        'Mejora en la disponibilidad y coordinación de recursos tecnológicos para estudiantes y docentes',
+        'Introduje exitosamente Scrum como metodología de trabajo en el área IT de la universidad.',
+        'Optimicé la gestión operativa y presupuestaria de la Dirección de Tecnología.',
+        'Mejoré la disponibilidad y coordinación de recursos tecnológicos para estudiantes y docentes.',
       ],
       en: [
-        'Successful introduction of Scrum as a working methodology in the university IT area',
-        'Optimization of operational and budget management in the Technology Directorate',
-        'Improved availability and coordination of technology resources for students and faculty',
+        'Successfully introduced Scrum as a working methodology in the university IT area.',
+        'Optimized operational and budget management in the Technology Directorate.',
+        'Improved availability and coordination of technology resources for students and faculty.',
       ],
       fr: [
-        'Introduction réussie de Scrum comme méthodologie de travail dans le département IT universitaire',
-        'Optimisation de la gestion opérationnelle et budgétaire de la Direction Technologie',
-        'Amélioration de la disponibilité et coordination des ressources technologiques pour étudiants et enseignants',
+        'Introduisis avec succès Scrum comme méthodologie de travail dans le département IT universitaire.',
+        'Optimisai la gestion opérationnelle et budgétaire de la Direction Technologie.',
+        'Améliorai la disponibilité et la coordination des ressources technologiques pour les étudiants et les enseignants.',
       ],
     },
   },
@@ -618,13 +618,13 @@ const EXPERIENCE = [
     },
     achievements: {
       es: [
-        'Avance del 95% en un proyecto con 2 años de retraso, logrado en solo 4 meses.',
-        'Adopción de Scrum al 90% en células de trabajo del equipo.',
+        'Logré un avance del 95% en un proyecto con 2 años de retraso, en solo 4 meses.',
+        'Alcancé una adopción de Scrum del 90% en las células de trabajo del equipo.',
         'Desbloqueé impedimentos que habían paralizado el proyecto durante meses.',
       ],
       en: [
-        '95% progress on a 2-year delayed project, achieved in just 4 months.',
-        '90% Scrum adoption across team work cells.',
+        'Achieved 95% progress on a 2-year delayed project in just 4 months.',
+        'Reached 90% Scrum adoption across all team work cells.',
         'Unblocked impediments that had paralyzed the project for months.',
       ],
       fr: [
@@ -683,19 +683,19 @@ const EXPERIENCE = [
     },
     achievements: {
       es: [
-        'Desarrollo e implementación de 60 reportes para el Proyecto SimpliFy de Avianca Holdings',
-        'Publicación exitosa en producción: simple.sv',
-        'Gestión ágil de proyectos en entorno de alta complejidad y múltiples partes interesadas internacionales',
+        'Desarrollé e implementé 65 reportes de análisis para el Proyecto SimpliFy de Avianca Holdings.',
+        'Gestioné stakeholders en Colombia y El Salvador, traduciendo diferencias culturales en requerimientos técnicos claros.',
+        'Lideré ceremonias Scrum y coordiné equipos de desarrollo en México en un entorno multicultural de alta complejidad.',
       ],
       en: [
-        'Development and implementation of 60 reports for the Avianca Holdings SimpliFy Project',
-        'Successful production launch: simple.sv',
-        'Agile project management in a high-complexity environment with multiple international stakeholders',
+        'Developed and implemented 65 analysis reports for the Avianca Holdings SimpliFy Project.',
+        'Managed stakeholders in Colombia and El Salvador, translating cultural differences into clear technical requirements.',
+        'Led Scrum ceremonies and coordinated development teams in Mexico in a high-complexity multicultural environment.',
       ],
       fr: [
         'Développement et implémentation de 60 rapports pour le projet SimpliFy d\'Avianca Holdings',
-        'Mise en production réussie : simple.sv',
-        'Gestion agile de projets dans un environnement complexe avec de multiples parties prenantes internationales',
+        'Gérai les parties prenantes en Colombie et au Salvador, traduisant les différences culturelles en exigences techniques claires.',
+        'Dirigeai les cérémonies Scrum et coordinai les équipes de développement au Mexique dans un environnement multiculturel complexe.',
       ],
     },
   },
@@ -814,7 +814,7 @@ const PROJECTS = [
     },
     stack: ['Product Ownership', 'Scrum', 'Gestión de Stakeholders', 'Roadmap'],
     role: { es: 'Product Owner / Scrum Master', en: 'Product Owner / Scrum Master', fr: 'Product Owner / Scrum Master' },
-    demoUrl: null,
+    demoUrl: 'https://elsalvadorpei.migracion.gob.sv/',
     codeUrl: null,
   },
   {
@@ -832,7 +832,7 @@ const PROJECTS = [
     },
     stack: ['Product Ownership', 'Scrum', 'Dashboards', 'Capacitación'],
     role: { es: 'Product Owner / Scrum Master', en: 'Product Owner / Scrum Master', fr: 'Product Owner / Scrum Master' },
-    demoUrl: null,
+    demoUrl: 'https://pasaporteenlinea.migracion.gob.sv',
     codeUrl: null,
   },
   {
@@ -850,7 +850,7 @@ const PROJECTS = [
     },
     stack: ['Scrum', 'Análisis de Negocio', 'Reporting', 'User Stories'],
     role: { es: 'Product Owner / Scrum Master', en: 'Product Owner / Scrum Master', fr: 'Product Owner / Scrum Master' },
-    demoUrl: null,
+    demoUrl: 'https://simple.sv/',
     codeUrl: null,
   },
   {
