@@ -294,7 +294,7 @@ h1, h2, h3, h4 {
 .site-header {
   position: fixed;
   top: 0; left: 0; right: 0;
-  z-index: 1000;
+  z-index: 1500;
   background: rgba(245,247,250,.93);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
@@ -438,7 +438,7 @@ h1, h2, h3, h4 {
   position: fixed;
   inset: var(--nav-height) 0 0 0;
   background: var(--color-surface);
-  z-index: 1200;
+  z-index: 1600;
   display: flex;
   flex-direction: column;
   padding: var(--space-lg);
