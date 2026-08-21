@@ -800,6 +800,7 @@ const SKILLS = [
  */
 const PROJECTS = [
   {
+    image: 'assets/img/project-pei.jpg',
     emoji: '🌐',
     title: {
       es: 'Portal PEI — Migración El Salvador',
@@ -817,6 +818,7 @@ const PROJECTS = [
     codeUrl: null,
   },
   {
+    image: 'assets/img/project-pasaporte.jpg',
     emoji: '🛂',
     title: {
       es: 'Pasaporte en Línea — Migración El Salvador',
@@ -834,6 +836,7 @@ const PROJECTS = [
     codeUrl: null,
   },
   {
+    image: 'assets/img/project-avianca.jpg',
     emoji: '✈️',
     title: {
       es: 'Proyecto SimpliFy — Avianca Holdings',
@@ -851,6 +854,7 @@ const PROJECTS = [
     codeUrl: null,
   },
   {
+    image: 'assets/img/project-promesa.jpg',
     emoji: '🤖',
     title: {
       es: 'Aplicación Web B2B con IA — Promesa Latina',
@@ -1023,7 +1027,9 @@ function renderProjects() {
 
   container.innerHTML = PROJECTS.map((project, idx) => `
     <article class="project-card reveal" data-delay="${Math.min(idx % 3, 2)}">
-      <div class="project-card-img" aria-hidden="true">${project.emoji}</div>
+      <div class="project-card-img" aria-hidden="true" style="background-image: url('${project.image}');">
+        <div class="project-card-overlay"></div>
+      </div>
       <div class="project-card-body">
         <p class="project-role-tag">${t(project.role)}</p>
         <h3 class="project-title">${t(project.title)}</h3>

@@ -113,20 +113,18 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html {
-  overflow-x: hidden;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   font-size: 16px;
 }
 
 body {
-  overflow-x: hidden;
   font-family: var(--font-body);
   background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.65;  /* Plus Jakarta Sans: métricas más ajustadas, 1.65 óptimo */
   -webkit-font-smoothing: antialiased;
-
+  overflow-x: hidden;
 }
 
 img, svg { display: block; max-width: 100%; }
@@ -294,7 +292,6 @@ h1, h2, h3, h4 {
 
 /* ─── 5. NAVEGACIÓN ───────────────────────────────────────────────────── */
 .site-header {
-  overflow: hidden;
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
@@ -316,12 +313,11 @@ h1, h2, h3, h4 {
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
-
+  height: 180px;
   max-width: var(--max-width);
   margin-inline: auto;
   padding-inline: clamp(1.25rem, 5vw, 2.5rem);
   height: var(--nav-height);
-  width: 100%;
 }
 
 .nav-logo {
@@ -999,12 +995,34 @@ h1, h2, h3, h4 {
   width: 100%;
   aspect-ratio: 16/9;
   background: linear-gradient(135deg, var(--color-navy-pale) 0%, var(--color-accent-pale) 100%);
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: var(--text-3xl);
   position: relative;
   overflow: hidden;
+}
+
+/* Overlay semitransparente sobre la imagen */
+.project-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(31, 58, 147, 0.15) 0%,
+    rgba(31, 58, 147, 0.45) 100%
+  );
+  transition: background var(--duration-base);
+}
+
+.project-card:hover .project-card-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(31, 58, 147, 0.05) 0%,
+    rgba(31, 58, 147, 0.25) 100%
+  );
 }
 
 /* Barra de color en la parte superior de cada card */
@@ -1073,7 +1091,7 @@ h1, h2, h3, h4 {
   margin-bottom: 1.5rem;
 }
 
-.contact-form { max-width: 100%; overflow: hidden; display: flex; flex-direction: column; gap: 1.25rem; }
+.contact-form { display: flex; flex-direction: column; gap: 1.25rem; }
 
 .form-group { display: flex; flex-direction: column; gap: .35rem; }
 .form-group label { font-size: var(--text-sm); font-weight: 600; color: var(--color-text); }
@@ -1110,8 +1128,6 @@ h1, h2, h3, h4 {
 .contact-links { display: flex; flex-direction: column; gap: .9rem; margin-bottom: 2rem; }
 
 .contact-link {
-  overflow: hidden;
-  max-width: 100%;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -1126,7 +1142,6 @@ h1, h2, h3, h4 {
               transform var(--duration-fast), color var(--duration-fast);
 }
 
-.contact-link span:last-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
 .contact-link:hover { border-color: var(--color-navy); box-shadow: var(--shadow-md); transform: translateX(5px); color: var(--color-navy); }
 
 .contact-icon {
@@ -1234,9 +1249,7 @@ h1, h2, h3, h4 {
   .hero-text { order: 0; }
   .hero-image-wrap { order: 1; width: clamp(160px, 55vw, 220px); margin: 1.5rem auto 0; z-index: 0; display: block; }
   .hero-ctas { justify-content: flex-start; }
-  .hero-stats { gap: 0.75rem; flex-wrap: nowrap; align-items: flex-start; }
-  .scroll-indicator { display: none; }
-  .hero-scroll { display: none; }
+  .hero-stats { gap: 1.25rem; }
   .about-aside { grid-template-columns: 1fr; }
   .timeline { padding-left: 1.5rem; }
   .timeline-lists { grid-template-columns: 1fr; gap: 1rem; }
@@ -1245,10 +1258,8 @@ h1, h2, h3, h4 {
 
 @media (max-width: 480px) {
   .hero-name { font-size: clamp(2.75rem, 13vw, 4rem); }
-  .stat-num { font-size: clamp(1.5rem, 7vw, 2rem); }
-  .stat-label { font-size: clamp(0.6rem, 2.5vw, 0.75rem); }
   .lang-switcher { display: none; }
-
+  .hero-stats { flex-wrap: wrap; gap: .75rem; }
   .stat-divider { display: none; }
 }
 
