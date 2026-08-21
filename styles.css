@@ -1299,6 +1299,7 @@ h1, h2, h3, h4 {
   .hero-image-wrap { order: 1; width: clamp(160px, 55vw, 220px); margin: 1.5rem auto 0; z-index: 0; display: block; }
   .hero-ctas { justify-content: flex-start; }
   .hero-stats { gap: 0.5rem; flex-wrap: nowrap; align-items: flex-start; }
+  .scroll-indicator { display: none; }
   .about-aside { grid-template-columns: 1fr; }
   .timeline { padding-left: 1.5rem; }
   .timeline-lists { grid-template-columns: 1fr; gap: 1rem; }
