@@ -814,7 +814,7 @@ const PROJECTS = [
     },
     stack: ['Product Ownership', 'Scrum', 'Gestión de Stakeholders', 'Roadmap'],
     role: { es: 'Product Owner / Scrum Master', en: 'Product Owner / Scrum Master', fr: 'Product Owner / Scrum Master' },
-    demoUrl: 'https://elsalvadorpei.migracion.gob.sv/',
+    demoUrl: null,
     codeUrl: null,
   },
   {
@@ -832,7 +832,7 @@ const PROJECTS = [
     },
     stack: ['Product Ownership', 'Scrum', 'Dashboards', 'Capacitación'],
     role: { es: 'Product Owner / Scrum Master', en: 'Product Owner / Scrum Master', fr: 'Product Owner / Scrum Master' },
-    demoUrl: 'https://pasaporteenlinea.migracion.gob.sv',
+    demoUrl: null,
     codeUrl: null,
   },
   {
@@ -850,7 +850,7 @@ const PROJECTS = [
     },
     stack: ['Scrum', 'Análisis de Negocio', 'Reporting', 'User Stories'],
     role: { es: 'Product Owner / Scrum Master', en: 'Product Owner / Scrum Master', fr: 'Product Owner / Scrum Master' },
-    demoUrl: 'https://simple.sv/',
+    demoUrl: null,
     codeUrl: null,
   },
   {

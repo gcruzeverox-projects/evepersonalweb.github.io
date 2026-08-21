@@ -438,7 +438,7 @@ h1, h2, h3, h4 {
   position: fixed;
   inset: var(--nav-height) 0 0 0;
   background: var(--color-surface);
-  z-index: 1100;
+  z-index: 1200;
   display: flex;
   flex-direction: column;
   padding: var(--space-lg);
