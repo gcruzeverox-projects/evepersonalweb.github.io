@@ -946,16 +946,19 @@ function renderEducation() {
     </div>
   `).join('');
 
-  certContainer.innerHTML = CERTIFICATIONS.map((cert, idx) => `
-    <div class="edu-item reveal" data-delay="${Math.min(idx, 4)}" role="listitem">
-      <div class="edu-icon" aria-hidden="true">${cert.icon}</div>
-      <div class="edu-body">
-        <div class="edu-degree">${cert.name}</div>
-        <div class="edu-institution">${cert.institution}</div>
-        <span class="edu-period">${cert.year}</span>
-      </div>
+  certContainer.innerHTML = `
+    <div class="cert-grid">
+      ${CERTIFICATIONS.map((cert, idx) => `
+        <div class="cert-badge reveal" data-delay="${Math.min(idx % 4, 3)}" role="listitem">
+          <div class="cert-badge-icon" aria-hidden="true">${cert.icon}</div>
+          <div class="cert-badge-body">
+            <div class="cert-badge-name">${cert.name}</div>
+            <div class="cert-badge-meta">${cert.institution} · ${cert.year}</div>
+          </div>
+        </div>
+      `).join('')}
     </div>
-  `).join('');
+  `;
 
   observeNewElements(eduContainer);
   observeNewElements(certContainer);
